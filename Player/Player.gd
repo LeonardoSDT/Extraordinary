@@ -21,6 +21,7 @@ onready var animationState = animationTree.get("parameters/playback")
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 
 func _ready():
+	
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
 
