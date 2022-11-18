@@ -515,6 +515,9 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[node name="Sprite" parent="YSort/Player" index="0"]
+frame = 1
+
 [node name="AnimationTree" parent="YSort/Player" index="3"]
 parameters/playback = SubResource( 50 )
 parameters/Idle/4/playback = SubResource( 51 )
@@ -579,3 +582,4 @@ position = Vector2( 208, 160 )
 
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]
+[editable path="YSort/Player/Hurtbox"]
