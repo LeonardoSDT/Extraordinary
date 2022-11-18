@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Tree.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -515,10 +517,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" parent="YSort/Player" index="0"]
-frame = 1
-
-[node name="AnimationTree" parent="YSort/Player" index="3"]
+[node name="AnimationTree" parent="YSort/Player" index="4"]
 parameters/playback = SubResource( 50 )
 parameters/Idle/4/playback = SubResource( 51 )
 
@@ -571,6 +570,17 @@ position = Vector2( 224, 0 )
 [node name="Grass4" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 208, 0 )
 
+[node name="Trees" type="YSort" parent="YSort"]
+
+[node name="Tree" parent="YSort/Trees" instance=ExtResource( 9 )]
+position = Vector2( 152, 24 )
+
+[node name="Tree2" parent="YSort/Trees" instance=ExtResource( 9 )]
+position = Vector2( 304, 144 )
+
+[node name="Tree3" parent="YSort/Trees" instance=ExtResource( 9 )]
+position = Vector2( 24, 112 )
+
 [node name="Scorpion" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 88, 88 )
 
@@ -579,6 +589,12 @@ position = Vector2( 232, 56 )
 
 [node name="Scorpion3" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 208, 160 )
+
+[node name="HealthUI" parent="." instance=ExtResource( 8 )]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 67.0
+margin_bottom = 19.0
 
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]
