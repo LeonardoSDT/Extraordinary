@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
@@ -6,6 +6,39 @@
 [ext_resource path="res://Player/SwordHitbox.gd" type="Script" id=4]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=6]
+[ext_resource path="res://Player/Keys.png" type="Texture" id=7]
+[ext_resource path="res://Player/PressedKeys.png" type="Texture" id=8]
+
+[sub_resource type="Animation" id=51]
+resource_name = "KeyPrompt"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ), ExtResource( 8 ) ]
+}
+
+[sub_resource type="Animation" id=52]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 7 ) ]
+}
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.00001
@@ -675,6 +708,19 @@ position = Vector2( 0, -8 )
 texture = ExtResource( 2 )
 hframes = 60
 frame = 1
+
+[node name="Key" type="Sprite" parent="."]
+position = Vector2( 1, -31 )
+texture = ExtResource( 7 )
+hframes = 5
+vframes = 8
+frame = 4
+
+[node name="KeyPrompt" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Key")
+autoplay = "KeyPrompt"
+anims/KeyPrompt = SubResource( 51 )
+anims/RESET = SubResource( 52 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708

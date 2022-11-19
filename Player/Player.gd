@@ -16,6 +16,8 @@ var velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
 
+var building = null setget set_building
+
 onready var animationPlayer = $AnimationPlayer # access node once it's ready
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -26,6 +28,13 @@ func _ready():
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
+	
+	set_building(null)
+
+func _unhandled_input(event):
+	if event is InputEventKey and event.is_action_pressed("interact") and building != null:
+		building.enter()
+
 
 func _physics_process(delta):
 	match state:
@@ -89,3 +98,13 @@ func _on_Hurtbox_area_entered(area):
 	stats.health -= 1
 	hurtbox.start_invincibility(0.5)
 	hurtbox.create_hit_effect()
+
+func set_building(new_building):
+	if new_building != null:
+		$Key.show()
+		$KeyPrompt.play("KeyPrompt")
+	else:
+		$Key.hide()
+		$KeyPrompt.stop()
+	building = new_building
+	
