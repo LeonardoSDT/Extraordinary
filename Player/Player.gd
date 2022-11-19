@@ -33,6 +33,7 @@ func _ready():
 
 func _unhandled_input(event):
 	if event is InputEventKey and event.is_action_pressed("interact") and building != null:
+		Global.player_pos = global_position
 		building.enter()
 
 
