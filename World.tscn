@@ -650,7 +650,7 @@ position = Vector2( 232, -88 )
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( 0, 40 )
+position = Vector2( 0, 48 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

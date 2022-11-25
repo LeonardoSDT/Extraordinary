@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Buildings/BuildingTileset.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/InsideLaboratories.gd" type="Script" id=3]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://NPCs/NPC Teacher.tscn" type="PackedScene" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "BuildingTileset.png 0"
@@ -105,6 +106,9 @@ margin_left = 8.0
 margin_top = 8.0
 margin_right = 67.0
 margin_bottom = 19.0
+
+[node name="NPC Student" parent="." instance=ExtResource( 5 )]
+position = Vector2( -72, 152 )
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]
