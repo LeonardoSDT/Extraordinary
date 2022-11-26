@@ -17,13 +17,14 @@ var knockback = Vector2.ZERO
 
 var state = CHASE
 
-onready var sprite = $AnimatedSprite
+onready var sprite = $Sprite
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
 onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftColliision
 onready var wanderController = $WanderController
 onready var animationPlayer = $AnimationPlayer
+onready var blinkAnimationPlayer = $BlinkAnimationPlayer
 
 func _ready():
 	state = pick_random_state([IDLE, WANDER])
@@ -38,6 +39,7 @@ func _physics_process(delta):
 			seek_player()
 			if wanderController.get_time_left() == 0:
 				update_wander()
+			animationPlayer.play("Idle")
 		
 		WANDER:
 			seek_player()
@@ -46,6 +48,7 @@ func _physics_process(delta):
 			accelerate_towards_point(wanderController.target_position, delta)
 			if global_position.distance_to(wanderController.target_position) <= MAX_SPEED * delta:
 				update_wander()
+			animationPlayer.play("Running")
 		
 		CHASE:
 			var player = playerDetectionZone.player
@@ -53,6 +56,7 @@ func _physics_process(delta):
 				accelerate_towards_point(player.global_position, delta)
 			else:
 				state = IDLE
+			animationPlayer.play("Attacking")
 		
 	if softCollision.is_colliding():
 		velocity += softCollision.get_push_vector() * delta * 400
@@ -88,7 +92,7 @@ func _on_Stats_no_health():
 	enemyDeathEffect.global_position = global_position
 
 func _on_Hurtbox_invincibility_started():
-	animationPlayer.play("Start")
+	blinkAnimationPlayer.play("Start")
 
 func _on_Hurtbox_invincibility_ended():
-	animationPlayer.play("Stop")
+	blinkAnimationPlayer.play("Stop")

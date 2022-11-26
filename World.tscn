@@ -1,14 +1,11 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
-[ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
-[ext_resource path="res://World/Tree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Buildings/Building.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World/InsideLaboratories.tscn" type="PackedScene" id=11]
 [ext_resource path="res://World.gd" type="Script" id=12]
@@ -502,7 +499,7 @@ script = ExtResource( 12 )
 [node name="CanvasLayer2" parent="." instance=ExtResource( 17 )]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 160, 96 )
+position = Vector2( 0, -296 )
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1150, 620 )
@@ -511,23 +508,21 @@ region_rect = Rect2( 0, 0, 1150, 620 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -589805, 0, 0, -589804, 0, 2, -524269, 0, 65536, -524268, 0, 65538, -458733, 0, 65536, -458732, 0, 65538, -393197, 0, 65536, -393196, 0, 65538, -327661, 0, 65536, -327660, 0, 65538, -262125, 0, 65536, -262124, 0, 65538, -196589, 0, 65536, -196588, 0, 65538, -131053, 0, 65536, -131052, 0, 65538, -65517, 0, 65536, -65516, 0, 65538, 19, 0, 65536, 20, 0, 65538, 65555, 0, 65536, 65556, 0, 65538, 131091, 0, 65536, 131092, 0, 65538, 196627, 0, 65536, 196628, 0, 65538, 262163, 0, 65536, 262164, 0, 65538, 327685, 0, 0, 327686, 0, 1, 327687, 0, 1, 327688, 0, 1, 327689, 0, 1, 327690, 0, 1, 327691, 0, 1, 327692, 0, 1, 327693, 0, 1, 327694, 0, 1, 327695, 0, 1, 327696, 0, 1, 327697, 0, 1, 327698, 0, 1, 327699, 0, 131078, 327700, 0, 131077, 327701, 0, 1, 327702, 0, 1, 327703, 0, 1, 327704, 0, 1, 327705, 0, 1, 327706, 0, 1, 327707, 0, 1, 327708, 0, 1, 327709, 0, 1, 327710, 0, 1, 327711, 0, 1, 327712, 0, 1, 327713, 0, 1, 327714, 0, 1, 327715, 0, 1, 327716, 0, 1, 327717, 0, 1, 327718, 0, 1, 327719, 0, 1, 327720, 0, 1, 327721, 0, 1, 327722, 0, 1, 327723, 0, 2, 393221, 0, 131072, 393222, 0, 131073, 393223, 0, 131073, 393224, 0, 131073, 393225, 0, 65542, 393226, 0, 65541, 393227, 0, 131073, 393228, 0, 131073, 393229, 0, 131073, 393230, 0, 131073, 393231, 0, 131073, 393232, 0, 131073, 393233, 0, 131073, 393234, 0, 131073, 393235, 0, 131073, 393236, 0, 131073, 393237, 0, 131073, 393238, 0, 131073, 393239, 0, 131073, 393240, 0, 131073, 393241, 0, 131073, 393242, 0, 131073, 393243, 0, 131073, 393244, 0, 131073, 393245, 0, 131073, 393246, 0, 131073, 393247, 0, 131073, 393248, 0, 131073, 393249, 0, 131073, 393250, 0, 131073, 393251, 0, 131073, 393252, 0, 131073, 393253, 0, 131073, 393254, 0, 131073, 393255, 0, 131073, 393256, 0, 131073, 393257, 0, 131073, 393258, 0, 131073, 393259, 0, 131074, 458761, 0, 65536, 458762, 0, 65538, 524297, 0, 65536, 524298, 0, 65538, 589833, 0, 65536, 589834, 0, 65538, 655369, 0, 65536, 655370, 0, 65538, 720905, 0, 65536, 720906, 0, 65538, 786441, 0, 65536, 786442, 0, 65538, 851977, 0, 65536, 851978, 0, 65538, 917513, 0, 65536, 917514, 0, 65538, 983049, 0, 65536, 983050, 0, 65538, 1048585, 0, 65536, 1048586, 0, 65538, 1114121, 0, 65536, 1114122, 0, 65538, 1179657, 0, 65536, 1179658, 0, 65538, 1245193, 0, 65536, 1245194, 0, 65538, 1310729, 0, 65536, 1310730, 0, 65538, 1376265, 0, 65536, 1376266, 0, 65538, 1441801, 0, 65536, 1441802, 0, 65538, 1507337, 0, 65536, 1507338, 0, 65538, 1572873, 0, 131072, 1572874, 0, 131074 )
 
 [node name="DirthCliffTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( -458766, 0, 0, -458765, 0, 1, -458764, 0, 1, -458763, 0, 1, -458762, 0, 1, -458761, 0, 1, -458760, 0, 1, -458759, 0, 1, -458758, 0, 1, -458757, 0, 1, -458756, 0, 1, -458755, 0, 1, -458754, 0, 1, -458753, 0, 1, -524288, 0, 1, -524287, 0, 1, -524286, 0, 1, -524285, 0, 1, -524284, 0, 1, -524283, 0, 1, -524282, 0, 1, -524281, 0, 1, -524280, 0, 1, -524279, 0, 1, -524278, 0, 1, -524277, 0, 1, -524276, 0, 1, -524275, 0, 1, -524274, 0, 1, -524273, 0, 1, -524272, 0, 1, -524271, 0, 1, -524270, 0, 1, -524269, 0, 1, -524268, 0, 1, -524267, 0, 1, -524266, 0, 1, -524265, 0, 2, -393230, 0, 65536, -393229, 0, 65541, -393228, 0, 131073, -393227, 0, 131073, -393226, 0, 131073, -393225, 0, 131073, -393224, 0, 131073, -393223, 0, 131073, -393222, 0, 131073, -393221, 0, 131073, -393220, 0, 131073, -393219, 0, 131073, -393218, 0, 131073, -393217, 0, 131073, -458752, 0, 131073, -458751, 0, 131073, -458750, 0, 131073, -458749, 0, 131073, -458748, 0, 131073, -458747, 0, 131073, -458746, 0, 131073, -458745, 0, 131073, -458744, 0, 131073, -458743, 0, 131073, -458742, 0, 131073, -458741, 0, 131073, -458740, 0, 131073, -458739, 0, 131073, -458738, 0, 131073, -458737, 0, 131073, -458736, 0, 131073, -458735, 0, 131073, -458734, 0, 131073, -458733, 0, 131073, -458732, 0, 131073, -458731, 0, 131073, -458730, 0, 65542, -458729, 0, 65538, -327694, 0, 65536, -327693, 0, 65538, -393194, 0, 65536, -393193, 0, 65538, -262158, 0, 65536, -262157, 0, 65538, -327658, 0, 65536, -327657, 0, 65538, -196622, 0, 65536, -196621, 0, 65538, -262122, 0, 65536, -262121, 0, 65538, -131086, 0, 65536, -131085, 0, 65538, -196586, 0, 65536, -196585, 0, 65538, -65550, 0, 65536, -65549, 0, 65538, -131050, 0, 65536, -131049, 0, 65538, -14, 0, 65536, -13, 0, 65538, -65514, 0, 65536, -65513, 0, 65538, 65522, 0, 65536, 65523, 0, 65538, 22, 0, 65536, 23, 0, 65538, 131058, 0, 65536, 131059, 0, 65538, 65558, 0, 65536, 65559, 0, 65538, 196594, 0, 65536, 196595, 0, 65538, 131094, 0, 65536, 131095, 0, 65538, 262130, 0, 65536, 262131, 0, 65538, 196630, 0, 65536, 196631, 0, 65538, 327666, 0, 65536, 327667, 0, 65538, 262166, 0, 65536, 262167, 0, 65538, 393202, 0, 65536, 393203, 0, 65538, 327702, 0, 65536, 327703, 0, 65538, 458738, 0, 65536, 458739, 0, 65538, 393238, 0, 65536, 393239, 0, 65538, 524274, 0, 65536, 524275, 0, 65538, 458774, 0, 65536, 458775, 0, 65538, 589810, 0, 65536, 589811, 0, 65538, 524310, 0, 65536, 524311, 0, 65538, 655346, 0, 65536, 655347, 0, 65538, 589846, 0, 65536, 589847, 0, 65538, 720882, 0, 65536, 720883, 0, 65538, 655382, 0, 65536, 655383, 0, 65538, 786418, 0, 65536, 786419, 0, 65538, 720918, 0, 65536, 720919, 0, 65538, 851954, 0, 65536, 851955, 0, 131077, 851956, 0, 1, 851957, 0, 1, 851958, 0, 1, 851959, 0, 1, 851960, 0, 1, 851961, 0, 1, 851962, 0, 1, 851963, 0, 1, 851964, 0, 1, 851965, 0, 1, 851966, 0, 1, 851967, 0, 1, 786432, 0, 1, 786433, 0, 1, 786434, 0, 1, 786435, 0, 2, 786438, 0, 0, 786439, 0, 1, 786440, 0, 1, 786441, 0, 1, 786442, 0, 1, 786443, 0, 1, 786444, 0, 1, 786445, 0, 1, 786446, 0, 1, 786447, 0, 1, 786448, 0, 1, 786449, 0, 1, 786450, 0, 1, 786451, 0, 1, 786452, 0, 1, 786453, 0, 1, 786454, 0, 131078, 786455, 0, 65538, 917490, 0, 131072, 917491, 0, 131073, 917492, 0, 131073, 917493, 0, 131073, 917494, 0, 131073, 917495, 0, 131073, 917496, 0, 131073, 917497, 0, 131073, 917498, 0, 131073, 917499, 0, 131073, 917500, 0, 131073, 917501, 0, 131073, 917502, 0, 131073, 917503, 0, 131073, 851968, 0, 131073, 851969, 0, 131073, 851970, 0, 131073, 851971, 0, 131074, 851974, 0, 131072, 851975, 0, 131073, 851976, 0, 131073, 851977, 0, 131073, 851978, 0, 131073, 851979, 0, 131073, 851980, 0, 131073, 851981, 0, 131073, 851982, 0, 131073, 851983, 0, 131073, 851984, 0, 131073, 851985, 0, 131073, 851986, 0, 131073, 851987, 0, 131073, 851988, 0, 131073, 851989, 0, 131073, 851990, 0, 131073, 851991, 0, 131074 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 16 )]
 position = Vector2( 0, 0 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
-position = Vector2( -440, -248 )
+position = Vector2( -576, -624 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
-position = Vector2( 768, 432 )
+position = Vector2( 576, 0 )
 
 [node name="YSort" type="YSort" parent="."]
 
@@ -545,125 +540,43 @@ remote_path = NodePath("../../../Camera2D")
 
 [node name="Grass" type="YSort" parent="YSort"]
 
-[node name="Grass" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 360 )
-
-[node name="Grass2" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 336 )
-
-[node name="Grass3" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 312 )
-
-[node name="Grass4" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 288 )
-
-[node name="Grass5" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 264 )
-
-[node name="Grass6" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 240 )
-
-[node name="Grass7" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 216 )
-
-[node name="Grass8" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 192 )
-
-[node name="Grass9" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 168 )
-
-[node name="Grass10" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 144 )
-
-[node name="Grass11" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 184, 120 )
-
 [node name="Bushes" type="YSort" parent="YSort"]
 
-[node name="Bush" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 368 )
-
-[node name="Bush2" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 328 )
-
-[node name="Bush3" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 288 )
-
-[node name="Bush4" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 248 )
-
-[node name="Bush5" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 208 )
-
-[node name="Bush6" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 168 )
-
-[node name="Bush7" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( 112, 128 )
-
 [node name="Trees" type="YSort" parent="YSort"]
-
-[node name="Tree" parent="YSort/Trees" instance=ExtResource( 9 )]
-position = Vector2( 256, 368 )
-
-[node name="Tree2" parent="YSort/Trees" instance=ExtResource( 9 )]
-position = Vector2( 256, 312 )
-
-[node name="Tree3" parent="YSort/Trees" instance=ExtResource( 9 )]
-position = Vector2( 256, 256 )
-
-[node name="Tree4" parent="YSort/Trees" instance=ExtResource( 9 )]
-position = Vector2( 256, 200 )
-
-[node name="Tree5" parent="YSort/Trees" instance=ExtResource( 9 )]
-position = Vector2( 256, 144 )
 
 [node name="Buildings" type="YSort" parent="YSort"]
 
 [node name="Building" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( 160, 40 )
+position = Vector2( -376, -520 )
 inside_scene = ExtResource( 11 )
 
 [node name="Building2" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( 320, -176 )
+position = Vector2( 0, -504 )
 inside_scene = ExtResource( 14 )
 
 [node name="Building3" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( 688, 40 )
+position = Vector2( 408, -496 )
 inside_scene = ExtResource( 13 )
 
 [node name="Enemies" type="YSort" parent="YSort"]
 
 [node name="Scorpion" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( -136, 16 )
+position = Vector2( -368, -336 )
 
 [node name="Scorpion2" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 376, 56 )
+position = Vector2( 8, -376 )
 
 [node name="Scorpion3" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 8, 312 )
-
-[node name="Scorpion4" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 0, 168 )
-
-[node name="Scorpion5" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 480, 176 )
-
-[node name="Scorpion6" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 504, 48 )
-
-[node name="Scorpion7" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 232, -88 )
+position = Vector2( 344, -272 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( 0, 48 )
-npc = "student1"
+position = Vector2( -72, -136 )
+npc_name = "student1"
 
 [node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( 40, -56 )
-npc = "student2"
+position = Vector2( -8, -136 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

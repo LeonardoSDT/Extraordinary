@@ -109,7 +109,7 @@ margin_bottom = 19.0
 
 [node name="NPC Teacher" parent="." instance=ExtResource( 5 )]
 position = Vector2( -72, 152 )
-npc = "teacher1"
+npc_name = "teacher1"
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]
