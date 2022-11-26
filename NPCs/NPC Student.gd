@@ -1,5 +1,6 @@
 extends Area2D
 
+export var npc = "npc-name"
 var active = false
 
 func _ready():
@@ -13,7 +14,7 @@ func _input(event):
 	if get_node_or_null('DialogNode') == null:
 		if event.is_action_pressed("interact") and active:
 			get_tree().paused = true
-			var dialog = Dialogic.start('student1-timeline')
+			var dialog = Dialogic.start(npc + str('-timeline'))
 			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 			dialog.connect('timeline_end',self, 'unpause')
 			add_child(dialog)

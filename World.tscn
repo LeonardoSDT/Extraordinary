@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://World/InsideLibrary.tscn" type="PackedScene" id=14]
 [ext_resource path="res://NPCs/NPC Student.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Limits/Camera2D.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Interface/Pause.tscn" type="PackedScene" id=17]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -498,6 +499,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [node name="World" type="Node2D"]
 script = ExtResource( 12 )
 
+[node name="CanvasLayer2" parent="." instance=ExtResource( 17 )]
+
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 160, 96 )
 texture = ExtResource( 3 )
@@ -656,6 +659,11 @@ position = Vector2( 232, -88 )
 
 [node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 15 )]
 position = Vector2( 0, 48 )
+npc = "student1"
+
+[node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 15 )]
+position = Vector2( 40, -56 )
+npc = "student2"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
