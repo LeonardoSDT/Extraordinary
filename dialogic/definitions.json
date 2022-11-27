@@ -4,14 +4,44 @@
 	],
 	"variables": [
 		{
+			"id": "1669408708-713",
+			"name": "teacher1-timeline-isheard",
+			"type": 0,
+			"value": "0"
+		},
+		{
 			"id": "1669407611-648",
 			"name": "student1-timeline-isheard",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1669408708-713",
-			"name": "teacher1-timeline-isheard",
+			"id": "1669525457-648",
+			"name": "algebra-class1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669526222-787",
+			"name": "algebrateacher-timeline-firsttime",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669526452-146",
+			"name": "algebra-grade",
+			"type": 0,
+			"value": "10"
+		},
+		{
+			"id": "1669526330-366",
+			"name": "algebrateacher-timeline-explanation1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669526524-918",
+			"name": "algebrateacher-timeline-question1",
 			"type": 0,
 			"value": "0"
 		}

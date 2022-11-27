@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
@@ -6,6 +6,7 @@
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://NPCs/NPC Teacher.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Buildings/Building.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World/InsideLaboratories.tscn" type="PackedScene" id=11]
 [ext_resource path="res://World.gd" type="Script" id=12]
@@ -13,7 +14,7 @@
 [ext_resource path="res://World/InsideLibrary.tscn" type="PackedScene" id=14]
 [ext_resource path="res://NPCs/NPC Student.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Limits/Camera2D.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Interface/Pause.tscn" type="PackedScene" id=17]
+[ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=17]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -571,12 +572,18 @@ position = Vector2( 344, -272 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
+[node name="NPC Teacher" parent="YSort/NPCs" instance=ExtResource( 9 )]
+position = Vector2( 40, -48 )
+npc_name = "algebrateacher"
+
 [node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( -72, -136 )
+position = Vector2( 0, -80 )
 npc_name = "student1"
 
 [node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( -8, -136 )
+unique_name_in_owner = true
+position = Vector2( 0, -232 )
+npc_name = "student2"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
