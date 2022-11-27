@@ -5,14 +5,24 @@
 	"folders": {
 		"Characters": {
 			"files": [
-				"character-1669138637.json",
 				"character-1669402094.json",
-				"character-1669408252.json",
-				"character-1669517083.json",
 				"character-1669521267.json"
 			],
 			"folders": {
+				"World": {
+					"files": [
+						"character-1669138637.json",
+						"character-1669408252.json",
+						"character-1669517083.json"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
@@ -21,16 +31,172 @@
 		},
 		"Definitions": {
 			"files": [
-				"1669407611-648",
-				"1669408708-713",
-				"1669525457-648",
-				"1669526222-787",
-				"1669526330-366",
-				"1669526452-146",
-				"1669526524-918"
+
 			],
 			"folders": {
+				"Glossary Entries": {
+					"files": [
 
+					],
+					"folders": {
+						"Algebra Entries": {
+							"files": [
+								"1669564268-787",
+								"1669564746-713",
+								"1669564834-339",
+								"1669569633-805",
+								"1669569685-366",
+								"1669569706-956",
+								"1669569924-292",
+								"1669574147-903",
+								"1669574379-672",
+								"1669577180-277",
+								"1669577252-274",
+								"1669577293-216",
+								"1669577333-740",
+								"1669577360-741",
+								"1669577417-257",
+								"1669577472-931",
+								"1669577514-429",
+								"1669577544-768"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						}
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"Values": {
+					"files": [
+
+					],
+					"folders": {
+						"Algebra Teacher": {
+							"files": [
+								"1669564537-970",
+								"1669526452-146"
+							],
+							"folders": {
+								"Algebra Timeline 1": {
+									"files": [
+										"1669564943-785",
+										"1669565043-842",
+										"1669566349-192",
+										"1669572080-191"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"Algebra Timeline 2": {
+									"files": [
+										"1669568851-330",
+										"1669568870-343",
+										"1669568884-947",
+										"1669573269-759"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"Algebra Timeline 3": {
+									"files": [
+										"1669573444-493",
+										"1669573461-298",
+										"1669573474-824",
+										"1669573479-822"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"Algebra Timeline 4": {
+									"files": [
+										"1669575058-720",
+										"1669575069-187",
+										"1669575073-678",
+										"1669575078-622"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"Algebra Timeline 5": {
+									"files": [
+										"1669576711-763",
+										"1669576725-700",
+										"1669576729-439",
+										"1669576733-460"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"Algebra Timeline Test": {
+									"files": [
+										"1669578514-498"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								}
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"World": {
+							"files": [
+								"1669407611-648",
+								"1669408708-713"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						}
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
@@ -51,13 +217,118 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1669138708.json",
-				"timeline-1669408246.json",
-				"timeline-1669516921.json",
-				"timeline-1669521308.json"
+
 			],
 			"folders": {
+				"Algebra Timelines": {
+					"files": [
+						"timeline-1669521308.json"
+					],
+					"folders": {
+						"Algebra Timeline 1": {
+							"files": [
+								"timeline-1669527635.json",
+								"timeline-1669563688.json",
+								"timeline-1669565108.json"
+							],
+							"folders": {
 
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"Algebra Timeline 2": {
+							"files": [
+								"timeline-1669568701.json",
+								"timeline-1669568988.json",
+								"timeline-1669569002.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"Algebra Timeline 3": {
+							"files": [
+								"timeline-1669573388.json",
+								"timeline-1669573528.json",
+								"timeline-1669573545.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"Algebra Timeline 4": {
+							"files": [
+								"timeline-1669575003.json",
+								"timeline-1669575018.json",
+								"timeline-1669575031.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"Algebra Timeline 5": {
+							"files": [
+								"timeline-1669576635.json",
+								"timeline-1669576649.json",
+								"timeline-1669576655.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
+						"Algebra Timeline Test": {
+							"files": [
+								"timeline-1669578394.json",
+								"timeline-1669578414.json",
+								"timeline-1669578432.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						}
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
+				"World": {
+					"files": [
+						"timeline-1669138708.json",
+						"timeline-1669408246.json",
+						"timeline-1669516921.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				}
 			},
 			"metadata": {
 				"color": null,

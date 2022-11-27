@@ -1,14 +1,151 @@
 {
 	"glossary": [
-
+		{
+			"extra": "Variables are generally denoted by the letters x, y, z etc.",
+			"id": "1669564268-787",
+			"name": "variables",
+			"text": "A variable is an entity whose value is not fixed; it can vary.",
+			"title": "Variables",
+			"type": 1
+		},
+		{
+			"extra": "Constants are generally denoted by the letters a, b, c, p, q etc if their values are not known or not provided, and by specific numerical values (like 3, π etc) if their values are known.",
+			"id": "1669564746-713",
+			"name": "constants",
+			"text": "A constant is an entity whose value is fixed for the given situation. The value of the constant might be unknown, but we know that it is fixed.",
+			"title": "Constants",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669564834-339",
+			"name": "expressions",
+			"text": "Expressions are a composite entity formed by combining variables and constants using various mathematical operations.",
+			"title": "Expressions",
+			"type": 1
+		},
+		{
+			"extra": "This means integers do not include fractions or decimals.",
+			"id": "1669569633-805",
+			"name": "integer",
+			"text": "Integers include positive numbers, negative numbers, and zero. 'Integer' is a Latin word which means 'whole' or 'intact'.",
+			"title": "Integers",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669569685-366",
+			"name": "substraction",
+			"text": "Subtraction is the process of taking away a number from another. It is a primary arithmetic operation that is denoted by a subtraction symbol (-) and is the method of calculating the difference between two numbers.",
+			"title": "Substraction",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669569706-956",
+			"name": "division",
+			"text": "The division is one of the basic arithmetic operations in math in which a larger number is broken down into smaller groups having the same number of items.",
+			"title": "Division",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669569924-292",
+			"name": "polynomial",
+			"text": "Polynomials are algebraic expressions that contain variables and constants. You can think of polynomials as a dialect of mathematics.",
+			"title": "Polynomials",
+			"type": 1
+		},
+		{
+			"extra": "For example, 3^4 means we are multiplying 3 four times. Its expanded form is 3×3×3×3.",
+			"id": "1669574147-903",
+			"name": "exponents",
+			"text": "An exponent of a number shows how many times we are multiplying a number by itself. Exponent is also known as the power of a number. It can be a whole number, fraction, negative number, or decimals.",
+			"title": "Exponents",
+			"type": 1
+		},
+		{
+			"extra": "Logarithm and exponent are inverse forms of each other.",
+			"id": "1669574379-672",
+			"name": "logarithms",
+			"text": "Logarithms is another way of writing exponents. We know that 2^5 = 32.\nBut if we are asked to find what number replaces the x in 2^x = 32, then by trial and error, we can simply find that the answer is 5.",
+			"title": "Logarithms",
+			"type": 1
+		},
+		{
+			"extra": "For example, 4 + 5 gives 9, and 5 + 4 also gives 9.",
+			"id": "1669577180-277",
+			"name": "Commutative Property of Addition",
+			"text": "The commutative property deals with the arithmetic operations of addition and multiplication. It means that changing the order or position of two numbers while adding or multiplying them does not change the end result. ",
+			"title": "Commutative Property of Addition",
+			"type": 1
+		},
+		{
+			"extra": "For example, 3 × 4 = 4 × 3 = 12.",
+			"id": "1669577252-274",
+			"name": "Commutative Property of Multiplication",
+			"text": "The commutative property of multiplication states that the product of two or more numbers remains the same irrespective of the order in which they are placed.",
+			"title": "Commutative Property of Multiplication",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669577293-216",
+			"name": "Associative Property of Addition",
+			"text": "The associative property of addition is the property of numbers which states that the way in which three or more numbers are grouped does not change the sum of these numbers.",
+			"title": "Associative Property of Addition",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669577333-740",
+			"name": "Associative Property of Multiplication",
+			"text": "The associative property of multiplication states that the way in which the numbers are grouped in a multiplication problem does not affect or change the product of those numbers.",
+			"title": "Associative Property of Multiplication",
+			"type": 1
+		},
+		{
+			"extra": "",
+			"id": "1669577360-741",
+			"name": "Distributive Property",
+			"text": "The distributive property states that an expression which is given in form of A (B + C) can be solved as A × (B + C) = AB + AC. This distributive law is also applicable to subtraction and is expressed as, A (B - C) = AB - AC. This means operand A is distributed between the other two operands.",
+			"title": "Distributive Property",
+			"type": 1
+		},
+		{
+			"extra": "The reciprocal of a number is also defined as the division of 1 by that number.",
+			"id": "1669577417-257",
+			"name": "Reciprocal",
+			"text": "According to the reciprocal definition in math, the reciprocal of a number is defined as the expression which when multiplied by the number gives the product as 1.",
+			"title": "Reciprocal",
+			"type": 1
+		},
+		{
+			"extra": "This is due to the fact that when we add 0 to any number, it does not change the number and keeps its identity.",
+			"id": "1669577472-931",
+			"name": "Additive Identity Property",
+			"text": "The additive identity property is also known as the identity property of addition, which states that adding 0 to any number, results in the number itself.",
+			"title": "Additive Identity Property",
+			"type": 1
+		},
+		{
+			"extra": "This is due to the reason that when 1 is multiplied by any number, it does not change the number, it keeps its identity.",
+			"id": "1669577514-429",
+			"name": "Multiplicative Identity Property",
+			"text": "The identity property of multiplication is also known as the Multiplicative Identity Property, which states that multiplying 1 with any number results in the number itself.",
+			"title": "Identity Property of Multiplication",
+			"type": 1
+		},
+		{
+			"extra": "For example, if we take the number 3 and add -3 to it, the result is zero. Hence, the additive inverse of 3 is -3.",
+			"id": "1669577544-768",
+			"name": "Additive Inverse",
+			"text": "Additive inverse is the number that is added to a given number to make the sum zero.",
+			"title": "Additive Inverse",
+			"type": 1
+		}
 	],
 	"variables": [
-		{
-			"id": "1669408708-713",
-			"name": "teacher1-timeline-isheard",
-			"type": 0,
-			"value": "0"
-		},
 		{
 			"id": "1669407611-648",
 			"name": "student1-timeline-isheard",
@@ -16,14 +153,128 @@
 			"value": "0"
 		},
 		{
-			"id": "1669525457-648",
-			"name": "algebra-class1",
+			"id": "1669408708-713",
+			"name": "teacher1-timeline-isheard",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1669526222-787",
-			"name": "algebrateacher-timeline-firsttime",
+			"id": "1669565043-842",
+			"name": "algebrateacher-timeline-question1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669566349-192",
+			"name": "algebrateacher-timeline-help1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669564943-785",
+			"name": "algebrateacher-timeline-class1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669572080-191",
+			"name": "algebrateacher-timeline-nextclass1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669568884-947",
+			"name": "agebrateacher-timeline-help2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669568851-330",
+			"name": "algebrateacher-timeline-class2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669573269-759",
+			"name": "algebrateacher-timeline-nextclass2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669568870-343",
+			"name": "algebrateacher-timeline-question2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669573479-822",
+			"name": "algebrateacher-timeline-nextclass3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669573474-824",
+			"name": "algebrateacher-timeline-help3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669573461-298",
+			"name": "algebrateacher-timeline-question3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669573444-493",
+			"name": "algebrateacher-timeline-class3",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669575058-720",
+			"name": "algebrateacher-timeline-class4",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669575069-187",
+			"name": "algebrateacher-timeline-question4",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669575073-678",
+			"name": "algebrateacher-timeline-help4",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669576733-460",
+			"name": "algebrateacher-timeline-nextclass5",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669576729-439",
+			"name": "algebrateacher-timeline-help5",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669575078-622",
+			"name": "algebrateacher-timeline-nextclass4",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669576711-763",
+			"name": "algebrateacher-timeline-class5",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669576725-700",
+			"name": "algebrateacher-timeline-question5",
 			"type": 0,
 			"value": "0"
 		},
@@ -31,17 +282,17 @@
 			"id": "1669526452-146",
 			"name": "algebra-grade",
 			"type": 0,
-			"value": "10"
+			"value": "100"
 		},
 		{
-			"id": "1669526330-366",
-			"name": "algebrateacher-timeline-explanation1",
+			"id": "1669564537-970",
+			"name": "algebrateacher-timeline-firsttime",
 			"type": 0,
-			"value": "0"
+			"value": "1"
 		},
 		{
-			"id": "1669526524-918",
-			"name": "algebrateacher-timeline-question1",
+			"id": "1669578514-498",
+			"name": "algebrateacher-timeline-test",
 			"type": 0,
 			"value": "0"
 		}

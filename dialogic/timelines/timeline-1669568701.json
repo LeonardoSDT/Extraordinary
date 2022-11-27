@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669568851-330",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This next class is about algebraic expressions"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An algebraic expression in algebra is formed using integer constants, variables, and basic arithmetic operations of addition(+), subtraction(-), multiplication(×), and division(/)"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An example of an algebraic expression is 5x + 6. Here 5 and 6 are fixed numbers and x is a variable. Algebraic expressions are also known as polynomials"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A polynomial is an expression consisting of variables, coefficients, and non-negative integer exponents of variables. An example would be: 5x^3 + 4x^2 + 7x + 2 = 0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As we saw in last class, an equation is a mathematical statement with an 'equal to' symbol between two algebraic expressions that have equal values. There are different types of equations"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The first one are the linear equations, these equations help in representing the relationship between variables such as x, y, z, and are expressed in exponents of one degree. In these linear equations, we use algebra, starting from the basics such as the addition and subtraction of algebraic expressions"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Then we have the quadratic equations, a quadratic equation can be written in the standard form as ax^2 + bx + c = 0, where a, b, c are constants and x is the variable. The values of x that satisfy the equation are called solutions of the equation, and a quadratic equation has at most two solutions."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We also have the cubic equations, these algebraic equations have variables with power 3 and they are referred to as cubic equations. A generalized form of a cubic equation is ax^3 + bx^2 + cx + d = 0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There are some other types, but these three are the principal ones"
+		},
+		{
+			"definition": "1669568851-330",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669568988.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669568701.json",
+		"name": "algebrateacher-timeline-class2"
+	}
+}

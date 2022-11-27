@@ -1,0 +1,48 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669564943-785",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Algebra is a branch of mathematics that deals with symbols and the arithmetic operations across these symbols. These symbols do not have any fixed values and are called variables"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "These symbols are manipulated through various arithmetic operations of addition, subtraction, multiplication, and division, with an objective to find the values."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Therefore, an algebraic equation would look like 3x + 4 = 28, here the algebraic expressions are made up of variables, operators, and constants. Here the numbers 4 and 28 are constants, x is the variable, and the arithmetic operation of addition is performed."
+		},
+		{
+			"definition": "1669564943-785",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669563688.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669527635.json",
+		"name": "algebrateacher-timeline-class1"
+	}
+}

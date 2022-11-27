@@ -1,0 +1,48 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669576711-763",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This last class is about the basic rules and properties of algebra"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The basic rules or properties of algebra for variables, algebraic expressions, or real numbers a, b and c are the following..."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Commutative Property of Addition: a + b = b + a\nCommutative Property of Multiplication: a × b = b × a\nAssociative Property of Addition: a + (b + c) = (a + b) + c\nAssociative Property of Multiplication: a × (b × c) = (a × b) × c\nDistributive Property: a × (b + c) = (a × b) + (a × c), or, a × (b - c) = (a × b) - (a × c)\nReciprocal: Reciprocal of a = 1/a\nAdditive Identity Property: a + 0 = 0 + a = a\nMultiplicative Identity Property: a × 1 = 1 × a = a\nAdditive Inverse: a + (-a) = 0"
+		},
+		{
+			"definition": "1669576711-763",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669576649.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669576635.json",
+		"name": "algebrateacher-timeline-class5"
+	}
+}

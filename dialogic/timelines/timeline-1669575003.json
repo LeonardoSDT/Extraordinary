@@ -1,0 +1,84 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669575058-720",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This next class is about algebraic formulas and operations"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An algebraic identity is an equation that is always true regardless of the values assigned to the variables. Identity means that the left-hand side of the equation is identical to the right-hand side, for all values of the variables."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "These formulas involve squares and cubes of algebraic expressions and help in solving the algebraic expressions in a few quick steps. The most frequently used algebraic formulas are the next ones"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(a + b)^2 = a^2 + 2ab + b^2\n(a - b)^2 = a^2 - 2ab + b^2\n(a + b)(a - b) = a2 - b2\n(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca\n(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\n(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And the basic operations covered in algebra are addition, subtraction, multiplication, and division"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Addition: For the addition operation in algebra, two or more expressions are separated by a plus (+) sign between them"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Subtraction: For the subtraction operation in algebra, two or more expressions are separated by a minus (-) sign between them"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Multiplication: For the multiplication operation in algebra, two or more expressions are separated by a multiplication (×) sign between them"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Division: For the division operation in algebra, two or more expressions are separated by a \"/\" sign between them"
+		},
+		{
+			"definition": "1669575058-720",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669575018.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669575003.json",
+		"name": "algebrateacher-timeline-class4"
+	}
+}

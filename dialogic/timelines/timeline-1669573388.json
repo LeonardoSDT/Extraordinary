@@ -1,0 +1,60 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669573444-493",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This next class is about exponents and logarithms"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An exponent is a mathematical operation, written as a^n. Here the expression a^n involves two numbers, the base 'a' and the exponent or power 'n'. Exponents are used to simplify algebraic expressions"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Some of the most common exponents include squares, cubes, square root, and cube root. The exponents can be represented in the form a^n = a × a × a × ... n times."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And a logarithm is the inverse function to exponents in algebra. Logarithms are a convenient way to simplify large algebraic expressions."
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The exponential form represented as a^x = n can be transformed into logarithmic form as log_a(n) = x"
+		},
+		{
+			"definition": "1669573444-493",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669573528.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669573388.json",
+		"name": "algebrateacher-timeline-class3"
+	}
+}

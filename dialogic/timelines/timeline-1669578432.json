@@ -1,0 +1,73 @@
+{
+	"events": [
+		{
+			"condition": ">=",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"emit_signal": "_spawn-algebra-medal",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well done, your grade for this subject is [algebra-grade]"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You have unlocked the Algebra Medal, it is somewhere outside, go look for it"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm sorry, but you didn't approve the test, you have an Extraordinary test for this subject"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Doctor Fernando will not like this..."
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Who's Doctor Fernando?"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669578432.json",
+		"name": "algebrateacher-timeline-helptest"
+	}
+}

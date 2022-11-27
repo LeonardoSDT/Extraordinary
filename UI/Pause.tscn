@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/Pause.gd" type="Script" id=1]
+[ext_resource path="res://UI/big234.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 2 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
 layer = 100
@@ -21,27 +34,30 @@ color = Color( 0, 0, 0, 0.364706 )
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -67.0
-margin_right = 67.0
+margin_left = -82.5
+margin_right = 82.5
 alignment = 1
 
 [node name="Resume" type="Button" parent="Pause/BlackOverlay/VBoxContainer"]
 margin_top = 56.0
-margin_right = 134.0
+margin_right = 165.0
 margin_bottom = 76.0
-text = "Resume game"
+custom_fonts/font = SubResource( 1 )
+text = "RESUME GAME"
 
 [node name="Options" type="Button" parent="Pause/BlackOverlay/VBoxContainer"]
 margin_top = 80.0
-margin_right = 134.0
+margin_right = 165.0
 margin_bottom = 100.0
-text = "Options"
+custom_fonts/font = SubResource( 2 )
+text = "OPTIONS"
 
 [node name="BackToMenu" type="Button" parent="Pause/BlackOverlay/VBoxContainer"]
 margin_top = 104.0
-margin_right = 134.0
+margin_right = 165.0
 margin_bottom = 124.0
-text = "Back to Main Menu"
+custom_fonts/font = SubResource( 3 )
+text = "BACK TO MAIN MENU"
 
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/Resume" to="Pause" method="_on_Resume_pressed"]
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/Options" to="Pause" method="_on_Options_pressed"]

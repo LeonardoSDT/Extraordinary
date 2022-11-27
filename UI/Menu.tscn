@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/Menu.gd" type="Script" id=1]
+[ext_resource path="res://UI/big234.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 2 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -15,23 +28,26 @@ margin_top = -80.0
 margin_right = 63.0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_right = 63.0
+margin_right = 82.0
 margin_bottom = 20.0
 focus_neighbour_top = NodePath("../QuitButton")
-text = "Start"
+custom_fonts/font = SubResource( 1 )
+text = "START"
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
 margin_top = 24.0
-margin_right = 63.0
+margin_right = 82.0
 margin_bottom = 44.0
-text = "Options"
+custom_fonts/font = SubResource( 2 )
+text = "OPTIONS"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 margin_top = 48.0
-margin_right = 63.0
+margin_right = 82.0
 margin_bottom = 68.0
 focus_neighbour_bottom = NodePath("../StartButton")
-text = "Quit"
+custom_fonts/font = SubResource( 3 )
+text = "QUIT"
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
