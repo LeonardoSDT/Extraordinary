@@ -1,0 +1,226 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://UI/big234.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI/OptionsMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=9]
+size = 10
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 8
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 12
+font_data = ExtResource( 1 )
+
+[node name="OptionsMenu" type="Control"]
+margin_right = 320.0
+margin_bottom = 180.0
+script = ExtResource( 2 )
+
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_right = 320.0
+margin_bottom = 154.0
+custom_fonts/font = SubResource( 9 )
+
+[node name="VIDEO" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_fonts/font = SubResource( 10 )
+
+[node name="CenterContainer" type="CenterContainer" parent="TabContainer/VIDEO"]
+anchor_right = 1.0
+anchor_bottom = 1.01695
+margin_bottom = -2.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/VIDEO/CenterContainer"]
+margin_left = 93.0
+margin_top = 20.0
+margin_right = 219.0
+margin_bottom = 100.0
+
+[node name="fullscreen" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
+margin_right = 126.0
+margin_bottom = 24.0
+alignment = 1
+
+[node name="fullscreen" type="Label" parent="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen"]
+margin_top = 7.0
+margin_right = 98.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 1 )
+text = "TOGGLE FULLSCREEN"
+
+[node name="full" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen"]
+margin_left = 102.0
+margin_right = 126.0
+margin_bottom = 24.0
+
+[node name="borderless" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
+margin_top = 28.0
+margin_right = 126.0
+margin_bottom = 52.0
+alignment = 1
+
+[node name="borderless" type="Label" parent="TabContainer/VIDEO/CenterContainer/GridContainer/borderless"]
+margin_top = 7.0
+margin_right = 98.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 2 )
+text = "TOGGLE BORDERLESS"
+
+[node name="border" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/borderless"]
+margin_left = 102.0
+margin_right = 126.0
+margin_bottom = 24.0
+
+[node name="vsync" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
+margin_top = 56.0
+margin_right = 126.0
+margin_bottom = 80.0
+alignment = 1
+
+[node name="vsync" type="Label" parent="TabContainer/VIDEO/CenterContainer/GridContainer/vsync"]
+margin_left = 15.0
+margin_top = 7.0
+margin_right = 83.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 3 )
+text = "TOGGLE VSYNC"
+
+[node name="vs" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/vsync"]
+margin_left = 87.0
+margin_right = 111.0
+margin_bottom = 24.0
+
+[node name="AUDIO" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="CenterContainer" type="CenterContainer" parent="TabContainer/AUDIO"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.0
+margin_top = -60.0
+margin_right = 150.0
+margin_bottom = 60.0
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/AUDIO/CenterContainer"]
+margin_left = 93.0
+margin_top = 14.0
+margin_right = 207.0
+margin_bottom = 106.0
+
+[node name="music_level" type="VBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer"]
+margin_right = 114.0
+margin_bottom = 44.0
+alignment = 1
+
+[node name="music" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level"]
+margin_right = 114.0
+margin_bottom = 10.0
+custom_fonts/font = SubResource( 4 )
+text = "MUSIC VOLUME"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level/music"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="music_db" type="HSlider" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level"]
+margin_top = 14.0
+margin_right = 114.0
+margin_bottom = 30.0
+min_value = -50.0
+max_value = 50.0
+
+[node name="music2" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level"]
+margin_top = 34.0
+margin_right = 114.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 5 )
+text = "50"
+
+[node name="fx_volume" type="VBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer"]
+margin_top = 48.0
+margin_right = 114.0
+margin_bottom = 92.0
+alignment = 1
+
+[node name="fx" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume"]
+margin_right = 114.0
+margin_bottom = 10.0
+custom_fonts/font = SubResource( 6 )
+text = "SOUND EFFECTS VOLUME"
+
+[node name="fx_db" type="HSlider" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume"]
+margin_top = 14.0
+margin_right = 114.0
+margin_bottom = 30.0
+min_value = -50.0
+max_value = 50.0
+
+[node name="fx2" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume"]
+margin_top = 34.0
+margin_right = 114.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 7 )
+text = "50"
+
+[node name="BackButton" type="Button" parent="."]
+margin_left = 2.0
+margin_top = 158.0
+margin_right = 82.0
+margin_bottom = 178.0
+custom_fonts/font = SubResource( 8 )
+text = "BACK"
+
+[connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full" to="." method="_on_full_toggled"]
+[connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/borderless/border" to="." method="_on_border_toggled"]
+[connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs" to="." method="_on_vs_toggled"]
+[connection signal="value_changed" from="TabContainer/AUDIO/CenterContainer/GridContainer/music_level/music_db" to="." method="_on_music_db_value_changed"]
+[connection signal="value_changed" from="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume/fx_db" to="." method="_on_fx_db_value_changed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

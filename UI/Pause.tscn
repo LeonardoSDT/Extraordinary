@@ -45,7 +45,7 @@ margin_bottom = 76.0
 custom_fonts/font = SubResource( 1 )
 text = "RESUME GAME"
 
-[node name="Options" type="Button" parent="Pause/BlackOverlay/VBoxContainer"]
+[node name="OptionsMenu" type="Button" parent="Pause/BlackOverlay/VBoxContainer"]
 margin_top = 80.0
 margin_right = 165.0
 margin_bottom = 100.0
@@ -60,5 +60,5 @@ custom_fonts/font = SubResource( 3 )
 text = "BACK TO MAIN MENU"
 
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/Resume" to="Pause" method="_on_Resume_pressed"]
-[connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/Options" to="Pause" method="_on_Options_pressed"]
+[connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/OptionsMenu" to="Pause" method="_on_OptionsMenu_pressed"]
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/BackToMenu" to="Pause" method="_on_BackToMenu_pressed"]

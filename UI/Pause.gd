@@ -11,8 +11,9 @@ func _on_Resume_pressed():
 	get_tree().paused = new_pause_state
 	visible = new_pause_state
 
-func _on_Options_pressed():
-	pass # Replace with function body.
-
 func _on_BackToMenu_pressed():
-	get_tree().change_scene("res://Interface/Menu.tscn")
+	_on_Resume_pressed()
+	get_tree().change_scene("res://UI/Menu.tscn")
+
+func _on_OptionsMenu_pressed():
+	pass # Replace with function body.
