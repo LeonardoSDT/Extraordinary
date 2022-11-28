@@ -153,6 +153,7 @@ hframes = 9
 frame = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( -2, -2 )
 rotation = 1.5708
 shape = SubResource( 5 )
@@ -164,6 +165,7 @@ anims/RESET = SubResource( 19 )
 anims/Running = SubResource( 18 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 3 )]
+visible = false
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
@@ -174,12 +176,14 @@ shape = SubResource( 6 )
 max_health = 3
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 6 )]
+visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.403922 )
 shape = SubResource( 7 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 7 )]
+visible = false
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
@@ -188,6 +192,7 @@ shape = SubResource( 8 )
 disabled = false
 
 [node name="SoftColliision" parent="." instance=ExtResource( 8 )]
+visible = false
 
 [node name="CollisionShape2D" parent="SoftColliision" index="0"]
 position = Vector2( -2, -2 )

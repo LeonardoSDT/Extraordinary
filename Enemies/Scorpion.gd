@@ -54,9 +54,9 @@ func _physics_process(delta):
 			var player = playerDetectionZone.player
 			if player != null:
 				accelerate_towards_point(player.global_position, delta)
+				animationPlayer.play("Running")
 			else:
 				state = IDLE
-			animationPlayer.play("Attacking")
 		
 	if softCollision.is_colliding():
 		velocity += softCollision.get_push_vector() * delta * 400
@@ -80,6 +80,7 @@ func pick_random_state(state_list):
 	return state_list.pop_front()
 
 func _on_Hurtbox_area_entered(area):
+	animationPlayer.play("Attacking")
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 100
 	hurtbox.create_hit_effect()
