@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/Scorpion.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Overlap/SoftColliision.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=9]
 [ext_resource path="res://WhiteColor.gdshader" type="Shader" id=10]
+[ext_resource path="res://Enemies/AttackPlayerDetectionZone.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ShaderMaterial" id=10]
 resource_local_to_scene = true
@@ -93,6 +94,9 @@ height = 4.0
 [sub_resource type="CircleShape2D" id=7]
 radius = 64.0
 
+[sub_resource type="CircleShape2D" id=20]
+radius = 22.0
+
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 9.0
 height = 4.0
@@ -165,7 +169,6 @@ anims/RESET = SubResource( 19 )
 anims/Running = SubResource( 18 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 3 )]
-visible = false
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
@@ -176,14 +179,18 @@ shape = SubResource( 6 )
 max_health = 3
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 6 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.403922 )
 shape = SubResource( 7 )
 
+[node name="AttackPlayerDetectionZone" parent="." instance=ExtResource( 11 )]
+
+[node name="CollisionShape2D" parent="AttackPlayerDetectionZone" index="0"]
+position = Vector2( 4, -10 )
+shape = SubResource( 20 )
+
 [node name="Hitbox" parent="." instance=ExtResource( 7 )]
-visible = false
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
@@ -192,7 +199,6 @@ shape = SubResource( 8 )
 disabled = false
 
 [node name="SoftColliision" parent="." instance=ExtResource( 8 )]
-visible = false
 
 [node name="CollisionShape2D" parent="SoftColliision" index="0"]
 position = Vector2( -2, -2 )
@@ -213,5 +219,6 @@ anims/Stop = SubResource( 13 )
 
 [editable path="Hurtbox"]
 [editable path="PlayerDetectionZone"]
+[editable path="AttackPlayerDetectionZone"]
 [editable path="Hitbox"]
 [editable path="SoftColliision"]

@@ -9,7 +9,8 @@ export var FRICTION = 200
 enum {
 	IDLE,
 	WANDER,
-	CHASE
+	CHASE,
+	ATTACK
 }
 
 var velocity = Vector2.ZERO
@@ -20,6 +21,7 @@ var state = CHASE
 onready var sprite = $Sprite
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
+onready var attackPlayerDetectionZone = $AttackPlayerDetectionZone
 onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftColliision
 onready var wanderController = $WanderController
@@ -52,11 +54,18 @@ func _physics_process(delta):
 		
 		CHASE:
 			var player = playerDetectionZone.player
+			attack_player()
 			if player != null:
 				accelerate_towards_point(player.global_position, delta)
 				animationPlayer.play("Running")
 			else:
 				state = IDLE
+		
+		ATTACK:
+			var player = attackPlayerDetectionZone.player
+			attack_player()
+			if player != null:
+				animationPlayer.play("Attacking")
 		
 	if softCollision.is_colliding():
 		velocity += softCollision.get_push_vector() * delta * 400
@@ -69,6 +78,12 @@ func accelerate_towards_point(point, delta):
 
 func seek_player():
 	if playerDetectionZone.can_see_player():
+		state = CHASE
+
+func attack_player():
+	if attackPlayerDetectionZone.can_attack_player():
+		state = ATTACK
+	else:
 		state = CHASE
 
 func update_wander():

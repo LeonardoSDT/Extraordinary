@@ -21,6 +21,7 @@ var state = CHASE
 onready var sprite = $Sprite
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
+onready var attackPlayerDetectionZone = $AttackPlayerDetectionZone
 onready var hurtbox = $Hurtbox
 onready var softCollision = $SoftColliision
 onready var wanderController = $WanderController
@@ -53,15 +54,17 @@ func _physics_process(delta):
 		
 		CHASE:
 			var player = playerDetectionZone.player
+			attack_player()
 			if player != null:
 				accelerate_towards_point(player.global_position, delta)
 				animationPlayer.play("Running")
-				print("chase")
 			else:
 				state = IDLE
 		ATTACK:
-			print("attack")
-			animationPlayer.play("Attacking")
+			var player = attackPlayerDetectionZone.player
+			attack_player()
+			if player != null:
+				animationPlayer.play("Attacking")
 		
 	if softCollision.is_colliding():
 		velocity += softCollision.get_push_vector() * delta * 400
@@ -76,6 +79,12 @@ func seek_player():
 	if playerDetectionZone.can_see_player():
 		state = CHASE
 
+func attack_player():
+	if attackPlayerDetectionZone.can_attack_player():
+		state = ATTACK
+	else:
+		state = CHASE
+
 func update_wander():
 	state = pick_random_state([IDLE, WANDER])
 	wanderController.start_wander_timer(rand_range(1, 3))
@@ -85,7 +94,6 @@ func pick_random_state(state_list):
 	return state_list.pop_front()
 
 func _on_Hurtbox_area_entered(area):
-	state = ATTACK
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 100
 	hurtbox.create_hit_effect()
