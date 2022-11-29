@@ -97,7 +97,7 @@ func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 100
 	hurtbox.create_hit_effect()
-	hurtbox.start_invincibility(0.4)
+	hurtbox.start_invincibility(0.8)
 
 func _on_Stats_no_health():
 	queue_free()
