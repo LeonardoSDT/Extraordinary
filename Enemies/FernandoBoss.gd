@@ -9,7 +9,8 @@ export var FRICTION = 200
 enum {
 	IDLE,
 	WANDER,
-	CHASE
+	CHASE,
+	ATTACK
 }
 
 var velocity = Vector2.ZERO
@@ -54,8 +55,12 @@ func _physics_process(delta):
 			var player = playerDetectionZone.player
 			if player != null:
 				accelerate_towards_point(player.global_position, delta)
+				animationPlayer.play("Running")
+				print("chase")
 			else:
 				state = IDLE
+		ATTACK:
+			print("attack")
 			animationPlayer.play("Attacking")
 		
 	if softCollision.is_colliding():
@@ -80,6 +85,7 @@ func pick_random_state(state_list):
 	return state_list.pop_front()
 
 func _on_Hurtbox_area_entered(area):
+	state = ATTACK
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 100
 	hurtbox.create_hit_effect()
@@ -97,3 +103,6 @@ func _on_Hurtbox_invincibility_started():
 
 func _on_Hurtbox_invincibility_ended():
 	blinkAnimationPlayer.play("Stop")
+
+func attack_animation_finished():
+	state = WANDER
