@@ -154,6 +154,9 @@ position = Vector2( 8, -376 )
 [node name="Scorpion3" parent="YSort/Enemies" instance=ExtResource( 7 )]
 position = Vector2( 344, -272 )
 
+[node name="FernandoBoss" parent="YSort/Enemies" instance=ExtResource( 5 )]
+position = Vector2( 344, -128 )
+
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="NPC Teacher" parent="YSort/NPCs" instance=ExtResource( 9 )]
@@ -176,9 +179,6 @@ margin_left = 8.0
 margin_top = 8.0
 margin_right = 67.0
 margin_bottom = 19.0
-
-[node name="FernandoBoss" parent="." instance=ExtResource( 5 )]
-position = Vector2( 344, -128 )
 
 [editable path="Camera2D"]
 [editable path="YSort/Player"]
