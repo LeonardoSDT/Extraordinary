@@ -4,7 +4,7 @@
 [ext_resource path="res://World/Bush2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
-[ext_resource path="res://Enemies/FernandoBoss.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Music and Sounds/Music.mp3" type="AudioStream" id=5]
 [ext_resource path="res://World/Bush3.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
@@ -154,9 +154,6 @@ position = Vector2( 8, -376 )
 [node name="Scorpion3" parent="YSort/Enemies" instance=ExtResource( 7 )]
 position = Vector2( 344, -272 )
 
-[node name="FernandoBoss" parent="YSort/Enemies" instance=ExtResource( 5 )]
-position = Vector2( 344, -128 )
-
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="NPC Teacher" parent="YSort/NPCs" instance=ExtResource( 9 )]
@@ -180,6 +177,12 @@ margin_top = 8.0
 margin_right = 67.0
 margin_bottom = 19.0
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[editable path="CanvasLayer2"]
+[editable path="CanvasLayer3"]
 [editable path="Camera2D"]
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]

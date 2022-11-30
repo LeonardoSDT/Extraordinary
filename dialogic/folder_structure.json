@@ -6,7 +6,8 @@
 		"Characters": {
 			"files": [
 				"character-1669402094.json",
-				"character-1669521267.json"
+				"character-1669521267.json",
+				"character-1669773936.json"
 			],
 			"folders": {
 				"World": {
@@ -31,7 +32,7 @@
 		},
 		"Definitions": {
 			"files": [
-
+				"1669774035-648"
 			],
 			"folders": {
 				"Glossary Entries": {
@@ -82,7 +83,8 @@
 						"Algebra Teacher": {
 							"files": [
 								"1669564537-970",
-								"1669526452-146"
+								"1669526452-146",
+								"1669774260-787"
 							],
 							"folders": {
 								"Algebra Timeline 1": {
@@ -194,7 +196,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				}
 			},
@@ -217,7 +219,7 @@
 		},
 		"Timelines": {
 			"files": [
-
+				"timeline-1669773833.json"
 			],
 			"folders": {
 				"Algebra Timelines": {
@@ -312,7 +314,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"World": {

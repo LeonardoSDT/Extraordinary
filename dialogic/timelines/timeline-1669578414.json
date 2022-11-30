@@ -29,19 +29,19 @@
 			"value": ""
 		},
 		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
 			"choice": "No",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -63,14 +63,6 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "3x + 6y - 7z",
 			"condition": "",
 			"definition": "",
@@ -78,19 +70,19 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "5a^3 + 9b = 0",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -112,14 +104,6 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "Quadratic equation",
 			"condition": "",
 			"definition": "",
@@ -127,19 +111,19 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "Cubic equation",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -161,19 +145,19 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "No",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -195,27 +179,11 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "27",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"choice": "-27",
@@ -225,19 +193,19 @@
 			"value": ""
 		},
 		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
 			"choice": "9",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -259,27 +227,11 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "5",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"choice": "4",
@@ -289,19 +241,19 @@
 			"value": ""
 		},
 		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
 			"choice": "3",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -323,19 +275,19 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "27a^3 - (27a^2b)/2 + (9ab^2)/4 - (b^3)/8",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
 		},
 		{
 			"choice": "27a^3 + (27a^2b)/2 + (9ab^2)/4 + (b^3)/8",
@@ -345,27 +297,11 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "27a^3 - (27a^2b)/2 - (9ab^2)/4 - (b^3)/8",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -387,14 +323,6 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "89990",
 			"condition": "",
 			"definition": "",
@@ -402,19 +330,19 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "89991",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -436,19 +364,19 @@
 			"value": ""
 		},
 		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
 			"choice": "-10/9",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"choice": "1/10",
@@ -458,27 +386,11 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "-1/10",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -500,19 +412,19 @@
 			"value": ""
 		},
 		{
+			"definition": "1669526452-146",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "10"
+		},
+		{
 			"choice": "13(3) - 13(4)",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"choice": "13(1)",
@@ -522,27 +434,11 @@
 			"value": ""
 		},
 		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
-		},
-		{
 			"choice": "13(-3 + 4)",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"definition": "1669526452-146",
-			"event_id": "dialogic_014",
-			"operation": "-",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "10"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -552,6 +448,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay, that's all"
+		},
+		{
+			"definition": "1669774260-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
 		},
 		{
 			"change_timeline": "timeline-1669578432.json",

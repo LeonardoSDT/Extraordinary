@@ -1,0 +1,91 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669774035-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi, I'm doctor Fernando"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can I help you with something?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"condition": "",
+			"definition": "1669774260-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": ">=",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Congratulations, you're good at math!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can't believe it"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "After all we have done"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is how you treat us..."
+		},
+		{
+			"change_scene": "res://Cutscenes/Cutscene.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669773833.json",
+		"name": "Fernando-timeline"
+	}
+}

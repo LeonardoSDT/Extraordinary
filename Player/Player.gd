@@ -81,7 +81,7 @@ func move_state(delta):
 
 func roll_state(delta):
 	velocity = roll_vector * ROLL_SPEED
-	hurtbox.start_invincibility(0.6)
+	hurtbox.start_invincibility(0.3)
 	blinkAnimationPlayer.play("Stop")
 	animationState.travel("Roll")
 	move()
