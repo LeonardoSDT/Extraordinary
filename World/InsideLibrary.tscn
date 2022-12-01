@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Buildings/BuildingTileset.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/DeathScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Buildings/ClassroomTileset.png" type="Texture" id=8]
+[ext_resource path="res://Music and Sounds/InsideLibraryMusic.mp3" type="AudioStream" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "BuildingTileset.png 0"
@@ -294,6 +295,10 @@ margin_bottom = 19.0
 [node name="CanvasLayer2" parent="." instance=ExtResource( 7 )]
 
 [node name="CanvasLayer3" parent="." instance=ExtResource( 6 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]

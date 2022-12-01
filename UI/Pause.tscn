@@ -60,6 +60,8 @@ margin_bottom = 124.0
 custom_fonts/font = SubResource( 3 )
 text = "BACK TO MAIN MENU"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Pause"]
+
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/Resume" to="Pause" method="_on_Resume_pressed"]
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/OptionsMenu" to="Pause" method="_on_OptionsMenu_pressed"]
 [connection signal="pressed" from="Pause/BlackOverlay/VBoxContainer/BackToMenu" to="Pause" method="_on_BackToMenu_pressed"]
