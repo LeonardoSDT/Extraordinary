@@ -73,14 +73,14 @@
 			"text": "This is how you treat us..."
 		},
 		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"change_scene": "res://Cutscenes/Cutscene.tscn",
 			"event_id": "dialogic_041"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
