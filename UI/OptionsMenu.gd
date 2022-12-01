@@ -1,5 +1,14 @@
 extends Control
 
+onready var fullscreen = $TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full
+onready var borderless = $TabContainer/VIDEO/CenterContainer/GridContainer/borderless/border
+onready var vsync = $TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs
+
+func _ready():
+	fullscreen.pressed = OS.window_fullscreen
+	borderless.pressed = OS.window_borderless
+	vsync.pressed = OS.vsync_enabled
+
 func _on_BackButton_pressed():
 	get_tree().change_scene("res://UI/Menu.tscn")
 

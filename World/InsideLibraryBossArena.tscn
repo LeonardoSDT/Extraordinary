@@ -4,7 +4,7 @@
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemies/FernandoBoss.tscn" type="PackedScene" id=3]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Music and Sounds/BossMusicSecondPhase.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Music and Sounds/BossMusicBattleSecondPhase.mp3" type="AudioStream" id=5]
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/DeathScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Buildings/ClassroomTileset.png" type="Texture" id=8]

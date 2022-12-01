@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BossMusicCutscene.mp3-c9b3bc95cacd0cf3ec4116267f568f84.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/BossMusicCutscene.mp3"
+dest_files=[ "res://.import/BossMusicCutscene.mp3-c9b3bc95cacd0cf3ec4116267f568f84.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
