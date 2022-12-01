@@ -1,7 +1,7 @@
 extends Control
 
-var menu = preload("res://Music and Sounds/Menu Move.wav")
-var select = preload("res://Music and Sounds/Menu Select.wav")
+var menu = preload("res://Music and Sounds/Menu/Menu Move.wav")
+var select = preload("res://Music and Sounds/Menu/Menu Select.wav")
 
 func _ready():
 	$VBoxContainer/StartButton.grab_focus()

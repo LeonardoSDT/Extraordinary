@@ -7,4 +7,4 @@ func _ready():
 	animationPlayer.play("Cutscene")
 
 func animation_finished():
-	get_tree().change_scene("res://World/InsideLibraryBossArenaMage.tscn")
+	get_tree().change_scene("res://Buildings/Library/InsideLibraryBossArenaMage.tscn")

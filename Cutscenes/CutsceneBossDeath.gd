@@ -7,6 +7,6 @@ func _ready():
 	animationPlayer.play("Cutscene")
 
 func animation_finished():
-	get_tree().change_scene("res://World/InsideLibrary.tscn")
+	get_tree().change_scene("res://Buildings/Library/InsideLibrary.tscn")
 	Dialogic.set_variable("boss_death", "1")
 	Dialogic.set_variable("algebra-testdone", "0")

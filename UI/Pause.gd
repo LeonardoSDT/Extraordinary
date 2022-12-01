@@ -1,7 +1,7 @@
 extends Control
 
-var pause = preload("res://Music and Sounds/Pause.wav")
-var unpause = preload("res://Music and Sounds/Unpause.wav")
+var pause = preload("res://Music and Sounds/Pause/Pause.wav")
+var unpause = preload("res://Music and Sounds/Pause/Unpause.wav")
 
 func _ready():
 	$BlackOverlay/VBoxContainer/Resume.grab_focus()

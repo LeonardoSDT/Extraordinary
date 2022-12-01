@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/DeathScreen.gd" type="Script" id=1]
-[ext_resource path="res://UI/big234.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/menu-font.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=4]
 size = 36
@@ -61,6 +61,8 @@ margin_right = 219.0
 margin_bottom = 135.0
 custom_fonts/font = SubResource( 3 )
 text = "BACK TO MAIN MENU"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="DeathScreen"]
 
 [connection signal="pressed" from="DeathScreen/BlackOverlay/VBoxContainer/Restart" to="DeathScreen" method="_on_Restart_pressed"]
 [connection signal="pressed" from="DeathScreen/BlackOverlay/VBoxContainer/BackToMenu" to="DeathScreen" method="_on_BackToMenu_pressed"]

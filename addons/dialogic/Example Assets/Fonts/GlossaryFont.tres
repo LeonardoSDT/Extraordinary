@@ -2,7 +2,7 @@
 
 [sub_resource type="DynamicFontData" id=1]
 antialiased = false
-font_path = "res://UI/Retro Gaming.ttf"
+font_path = "res://UI/game-font.ttf"
 
 [resource]
 size = 5
