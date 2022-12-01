@@ -45,7 +45,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 4.1, 7.9 ),
+"times": PoolRealArray( 0, 4, 6.8 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -57,7 +57,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 7.9, 11.7 ),
+"times": PoolRealArray( 0, 7.6, 11.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -69,7 +69,7 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 11.8, 15.8 ),
+"times": PoolRealArray( 0, 11.5, 15.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
@@ -448,7 +448,7 @@ position = Vector2( 0, -70.5405 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -110 )
 current = true
-zoom = Vector2( 0.1, 0.1 )
+zoom = Vector2( 0.8, 0.8 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -472,11 +472,12 @@ margin_top = -30.0
 margin_right = 133.5
 margin_bottom = -16.0
 custom_fonts/font = SubResource( 5 )
-text = "Dear oh dear, I think I don't have another choice"
+text = "Dear, oh dear"
 align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
+visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -486,7 +487,7 @@ margin_top = -30.0
 margin_right = 133.5
 margin_bottom = -16.0
 custom_fonts/font = SubResource( 5 )
-text = "You'll have to pay for your crimes"
+text = "I hope you have studied"
 align = 1
 valign = 1
 

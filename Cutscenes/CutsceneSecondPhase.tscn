@@ -173,6 +173,30 @@ tracks/12/keys = {
 "update": 0,
 "values": [ Vector2( 4, -140 ), Vector2( 10, -143 ) ]
 }
+tracks/13/type = "value"
+tracks/13/path = NodePath("CanvasLayer/Label5:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 21.6, 24.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("CanvasLayer/Label6:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 24.1, 27 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
 
 [sub_resource type="Animation" id=8]
 length = 0.001
@@ -271,6 +295,30 @@ tracks/7/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 4, -140 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CanvasLayer/Label5:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("CanvasLayer/Label6:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
 }
 
 [sub_resource type="TileSet" id=2]
@@ -642,6 +690,36 @@ margin_right = 133.5
 margin_bottom = -16.0
 custom_fonts/font = SubResource( 5 )
 text = "My true mentor..."
+align = 1
+valign = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -133.5
+margin_top = -30.0
+margin_right = 133.5
+margin_bottom = -16.0
+custom_fonts/font = SubResource( 5 )
+text = "I am Doctor Fernando, Blade of Euler"
+align = 1
+valign = 1
+
+[node name="Label6" type="Label" parent="CanvasLayer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -133.5
+margin_top = -30.0
+margin_right = 133.5
+margin_bottom = -16.0
+custom_fonts/font = SubResource( 5 )
+text = "And I have never known defeat..."
 align = 1
 valign = 1
 

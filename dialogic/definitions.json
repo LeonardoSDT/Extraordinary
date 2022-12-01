@@ -307,6 +307,12 @@
 			"name": "algebra-testdone",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1669865116-648",
+			"name": "boss_death",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }

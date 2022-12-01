@@ -1,7 +1,8 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Enemies/FernandoBoss.png" type="Texture" id=1]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Music and Sounds/BossMusicSecondPhase.mp3" type="AudioStream" id=3]
 [ext_resource path="res://Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Overlap/SoftColliision.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Overlap/Hitbox.tscn" type="PackedScene" id=6]
@@ -323,7 +324,7 @@ shape = SubResource( 9 )
 [node name="WanderController" parent="." instance=ExtResource( 7 )]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 3 )
 
 [node name="BlinkAnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 12 )

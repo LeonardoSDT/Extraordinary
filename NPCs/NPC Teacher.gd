@@ -17,9 +17,9 @@ func _process(delta):
 func _input(event):
 	if get_node_or_null('DialogNode') == null:
 		if event.is_action_pressed("interact") and active:
-			get_tree().paused = true
+#			get_tree().paused = true
 			var dialog = Dialogic.start(npc_name + str('-timeline'))
-			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+#			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 			dialog.connect('timeline_end',self, 'unpause')
 			dialog.connect('dialogic_signal', self, 'dialogic_signal')
 			add_child(dialog)
