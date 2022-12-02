@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BossMusicCutsceneDeath.mp3-2f6aa2676f52149a9591a1b8bc5d7bf9.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Enemies/Boss Music/BossMusicCutsceneDeath.mp3"
+dest_files=[ "res://.import/BossMusicCutsceneDeath.mp3-2f6aa2676f52149a9591a1b8bc5d7bf9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

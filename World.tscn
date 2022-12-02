@@ -1,29 +1,15 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://World/Objects/Plants/Bush2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=3]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://Music and Sounds/Soundtrack/Music.mp3" type="AudioStream" id=5]
-[ext_resource path="res://World/Objects/Plants/Bush3.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
-[ext_resource path="res://NPCs/NPC Teacher.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Buildings/Building.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Buildings/Laboratories/InsideLaboratories.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Buildings/BuildingLibrary.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World.gd" type="Script" id=12]
-[ext_resource path="res://Buildings/Classrooms/InsideClassrooms.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Buildings/Library/InsideLibrary.tscn" type="PackedScene" id=14]
-[ext_resource path="res://NPCs/NPC Student.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Limits/Camera2D.tscn" type="PackedScene" id=16]
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=17]
-[ext_resource path="res://World/Objects/Plants/Bush1.tscn" type="PackedScene" id=18]
-[ext_resource path="res://World/Objects/Plants/Grass1.tscn" type="PackedScene" id=19]
-[ext_resource path="res://World/Objects/Plants/Grass3.tscn" type="PackedScene" id=20]
-[ext_resource path="res://World/Objects/Plants/Grass5.tscn" type="PackedScene" id=21]
-[ext_resource path="res://World/Objects/Plants/Grass4.tscn" type="PackedScene" id=22]
-[ext_resource path="res://World/Objects/Plants/Tree1.tscn" type="PackedScene" id=23]
-[ext_resource path="res://World/Objects/Plants/Grass2.tscn" type="PackedScene" id=24]
 [ext_resource path="res://UI/DeathScreen.tscn" type="PackedScene" id=25]
 
 [sub_resource type="TileSet" id=1]
@@ -63,10 +49,10 @@ script = ExtResource( 12 )
 [node name="CanvasLayer3" parent="." instance=ExtResource( 25 )]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 0, -296 )
+position = Vector2( -1008, 0 )
 texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 1150, 620 )
+region_rect = Rect2( 0, 0, 2000, 1000 )
 
 [node name="DirthPathTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -77,10 +63,10 @@ format = 1
 position = Vector2( 0, 0 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
-position = Vector2( -576, -624 )
+position = Vector2( -2008, -504 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
-position = Vector2( 576, 0 )
+position = Vector2( -8, 504 )
 
 [node name="YSort" type="YSort" parent="."]
 
@@ -98,76 +84,19 @@ remote_path = NodePath("../../../Camera2D")
 
 [node name="Grass" type="YSort" parent="YSort"]
 
-[node name="Grass" parent="YSort/Grass" instance=ExtResource( 19 )]
-position = Vector2( -136, -64 )
-
-[node name="Grass2" parent="YSort/Grass" instance=ExtResource( 24 )]
-position = Vector2( -112, -64 )
-
-[node name="Grass3" parent="YSort/Grass" instance=ExtResource( 20 )]
-position = Vector2( -88, -64 )
-
-[node name="Grass4" parent="YSort/Grass" instance=ExtResource( 22 )]
-position = Vector2( -64, -64 )
-
-[node name="Grass5" parent="YSort/Grass" instance=ExtResource( 21 )]
-position = Vector2( -40, -64 )
-
 [node name="Bushes" type="YSort" parent="YSort"]
-
-[node name="Bush" parent="YSort/Bushes" instance=ExtResource( 18 )]
-position = Vector2( 8, -40 )
-
-[node name="Bush2" parent="YSort/Bushes" instance=ExtResource( 2 )]
-position = Vector2( -40, -32 )
-
-[node name="Bush3" parent="YSort/Bushes" instance=ExtResource( 6 )]
-position = Vector2( 56, -16 )
 
 [node name="Trees" type="YSort" parent="YSort"]
 
-[node name="Tree" parent="YSort/Trees" instance=ExtResource( 23 )]
-position = Vector2( 88, -64 )
-
 [node name="Buildings" type="YSort" parent="YSort"]
 
-[node name="Building" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( -376, -520 )
-inside_scene = ExtResource( 11 )
-
-[node name="Building2" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( 0, -504 )
+[node name="BuildingLibrary" parent="YSort/Buildings" instance=ExtResource( 10 )]
+position = Vector2( -560, -144 )
 inside_scene = ExtResource( 14 )
-
-[node name="Building3" parent="YSort/Buildings" instance=ExtResource( 10 )]
-position = Vector2( 408, -496 )
-inside_scene = ExtResource( 13 )
 
 [node name="Enemies" type="YSort" parent="YSort"]
 
-[node name="Scorpion" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( -128, -112 )
-
-[node name="Scorpion2" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 8, -376 )
-
-[node name="Scorpion3" parent="YSort/Enemies" instance=ExtResource( 7 )]
-position = Vector2( 344, -272 )
-
 [node name="NPCs" type="YSort" parent="YSort"]
-
-[node name="NPC Teacher" parent="YSort/NPCs" instance=ExtResource( 9 )]
-position = Vector2( 40, -48 )
-npc_name = "algebrateacher"
-
-[node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 15 )]
-position = Vector2( 0, -80 )
-npc_name = "student1"
-
-[node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 15 )]
-unique_name_in_owner = true
-position = Vector2( 0, -232 )
-npc_name = "student2"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

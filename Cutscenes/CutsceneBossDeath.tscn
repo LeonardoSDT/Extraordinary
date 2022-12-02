@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
+[ext_resource path="res://Music and Sounds/Enemies/Boss Music/BossMusicCutsceneDeath.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Buildings/Classrooms/ClassroomTileset.png" type="Texture" id=2]
 [ext_resource path="res://NPCs/NPC Fernando.tscn" type="PackedScene" id=3]
 [ext_resource path="res://NPCs/Cutscenes/NPC Player.tscn" type="PackedScene" id=4]
@@ -13,7 +14,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "Cutscene"
-length = 27.0
+length = 17.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/Control/ColorRect:color")
 tracks/0/interp = 1
@@ -21,7 +22,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 13, 17.2 ),
+"times": PoolRealArray( 0, 13, 17 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
@@ -105,7 +106,7 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 17.5 ),
+"times": PoolRealArray( 17 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
@@ -585,6 +586,10 @@ valign = 1
 visible = false
 position = Vector2( 4, -140 )
 texture = ExtResource( 11 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
 
 [editable path="NPC Fernando"]
 [editable path="NPC Player"]
