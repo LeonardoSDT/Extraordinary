@@ -8,7 +8,7 @@
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/DeathScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Buildings/Library/LibraryColumn.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Music and Sounds/Soundtrack/WorldMusic.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Music and Sounds/Soundtrack/InsideMusic.mp3" type="AudioStream" id=9]
 [ext_resource path="res://Buildings/Library/Wall.tscn" type="PackedScene" id=10]
 [ext_resource path="res://NPCs/NPC Teacher.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Buildings/Library/Table.tscn" type="PackedScene" id=12]

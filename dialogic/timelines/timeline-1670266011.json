@@ -7,6 +7,12 @@
 			"text": "Welcome to the library"
 		},
 		{
+			"condition": "",
+			"definition": "1669774260-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
 			"condition": "<",
 			"definition": "1669526452-146",
 			"event_id": "dialogic_012",
@@ -17,6 +23,9 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Doctor Fernando is waiting for you..."
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
