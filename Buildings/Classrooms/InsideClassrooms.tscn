@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://World/Objects/Plants/Grass4.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://NPCs/NPC Student.tscn" type="PackedScene" id=13]
 [ext_resource path="res://NPCs/Moving NPC.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Buildings/Classrooms/InsideClassroom.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Music and Sounds/Soundtrack/InsideMusic.mp3" type="AudioStream" id=16]
 
 [sub_resource type="TileSet" id=1]
 1/name = "ClassroomTileset.png 1"
@@ -854,6 +855,10 @@ shape = SubResource( 9 )
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="InsideLimits"]
 position = Vector2( 0, 233 )
 shape = SubResource( 10 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+autoplay = true
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]

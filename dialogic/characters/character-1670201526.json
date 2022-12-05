@@ -1,0 +1,21 @@
+{
+	"color": "#ffe76ed1",
+	"description": "",
+	"display_name": "Daniel",
+	"display_name_bool": true,
+	"id": "character-1670201526.json",
+	"mirror_portraits": false,
+	"name": "Algebra Student 5",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

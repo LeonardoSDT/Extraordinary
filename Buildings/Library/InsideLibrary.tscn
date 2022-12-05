@@ -8,7 +8,8 @@
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI/DeathScreen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Buildings/Classrooms/ClassroomTileset.png" type="Texture" id=8]
-[ext_resource path="res://Music and Sounds/Soundtrack/InsideLibraryMusic.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Music and Sounds/Soundtrack/WorldMusic.mp3" type="AudioStream" id=9]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "BuildingTileset.png 0"

@@ -6,10 +6,29 @@
 		"Characters": {
 			"files": [
 				"character-1669402094.json",
-				"character-1669521267.json",
 				"character-1669773936.json"
 			],
 			"folders": {
+				"Algebra": {
+					"files": [
+						"character-1669521267.json",
+						"character-1670201301.json",
+						"character-1670201380.json",
+						"character-1670201465.json",
+						"character-1670201490.json",
+						"character-1670201526.json",
+						"character-1670201544.json",
+						"character-1670201569.json",
+						"character-1670201584.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
 				"World": {
 					"files": [
 
@@ -22,7 +41,8 @@
 								"character-1670187511.json",
 								"character-1670187665.json",
 								"character-1670189500.json",
-								"character-1670189593.json"
+								"character-1670189593.json",
+								"character-1670210858.json"
 							],
 							"folders": {
 
@@ -42,7 +62,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},
@@ -108,19 +128,21 @@
 
 					],
 					"folders": {
-						"Algebra Teacher": {
+						"Algebra": {
 							"files": [
-								"1669564537-970",
-								"1669526452-146",
-								"1669774260-787"
+
 							],
 							"folders": {
-								"Algebra Timeline 1": {
+								"Algebra Students": {
 									"files": [
-										"1669564943-785",
-										"1669565043-842",
-										"1669566349-192",
-										"1669572080-191"
+										"1670201676-941",
+										"1670201706-769",
+										"1670201715-766",
+										"1670201721-893",
+										"1670201730-118",
+										"1670201740-794",
+										"1670201749-754",
+										"1670201756-960"
 									],
 									"folders": {
 
@@ -130,72 +152,100 @@
 										"folded": true
 									}
 								},
-								"Algebra Timeline 2": {
+								"Algebra Teacher": {
 									"files": [
-										"1669568851-330",
-										"1669568870-343",
-										"1669568884-947",
-										"1669573269-759"
+										"1669564537-970",
+										"1669526452-146",
+										"1669774260-787"
 									],
 									"folders": {
+										"Algebra Timeline 1": {
+											"files": [
+												"1669564943-785",
+												"1669565043-842",
+												"1669566349-192",
+												"1669572080-191"
+											],
+											"folders": {
 
-									},
-									"metadata": {
-										"color": null,
-										"folded": true
-									}
-								},
-								"Algebra Timeline 3": {
-									"files": [
-										"1669573444-493",
-										"1669573461-298",
-										"1669573474-824",
-										"1669573479-822"
-									],
-									"folders": {
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										},
+										"Algebra Timeline 2": {
+											"files": [
+												"1669568851-330",
+												"1669568870-343",
+												"1669568884-947",
+												"1669573269-759"
+											],
+											"folders": {
 
-									},
-									"metadata": {
-										"color": null,
-										"folded": true
-									}
-								},
-								"Algebra Timeline 4": {
-									"files": [
-										"1669575058-720",
-										"1669575069-187",
-										"1669575073-678",
-										"1669575078-622"
-									],
-									"folders": {
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										},
+										"Algebra Timeline 3": {
+											"files": [
+												"1669573444-493",
+												"1669573461-298",
+												"1669573474-824",
+												"1669573479-822"
+											],
+											"folders": {
 
-									},
-									"metadata": {
-										"color": null,
-										"folded": true
-									}
-								},
-								"Algebra Timeline 5": {
-									"files": [
-										"1669576711-763",
-										"1669576725-700",
-										"1669576729-439",
-										"1669576733-460"
-									],
-									"folders": {
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										},
+										"Algebra Timeline 4": {
+											"files": [
+												"1669575058-720",
+												"1669575069-187",
+												"1669575073-678",
+												"1669575078-622"
+											],
+											"folders": {
 
-									},
-									"metadata": {
-										"color": null,
-										"folded": true
-									}
-								},
-								"Algebra Timeline Test": {
-									"files": [
-										"1669578514-498"
-									],
-									"folders": {
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										},
+										"Algebra Timeline 5": {
+											"files": [
+												"1669576711-763",
+												"1669576725-700",
+												"1669576729-439",
+												"1669576733-460"
+											],
+											"folders": {
 
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										},
+										"Algebra Timeline Test": {
+											"files": [
+												"1669578514-498"
+											],
+											"folders": {
+
+											},
+											"metadata": {
+												"color": null,
+												"folded": true
+											}
+										}
 									},
 									"metadata": {
 										"color": null,
@@ -205,7 +255,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"World": {
@@ -224,7 +274,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								},
 								"Teachers": {
@@ -243,7 +293,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						}
 					},
@@ -255,7 +305,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Themes": {
@@ -350,6 +400,25 @@
 								"folded": true
 							}
 						},
+						"Algebra Timeline Students": {
+							"files": [
+								"timeline-1670201194.json",
+								"timeline-1670202005.json",
+								"timeline-1670202187.json",
+								"timeline-1670202399.json",
+								"timeline-1670202565.json",
+								"timeline-1670202664.json",
+								"timeline-1670202774.json",
+								"timeline-1670202879.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": true
+							}
+						},
 						"Algebra Timeline Test": {
 							"files": [
 								"timeline-1669578394.json",
@@ -367,7 +436,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"World": {
@@ -382,7 +451,8 @@
 								"timeline-1670187494.json",
 								"timeline-1670187655.json",
 								"timeline-1670189478.json",
-								"timeline-1670189487.json"
+								"timeline-1670189487.json",
+								"timeline-1670210840.json"
 							],
 							"folders": {
 
@@ -402,7 +472,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},

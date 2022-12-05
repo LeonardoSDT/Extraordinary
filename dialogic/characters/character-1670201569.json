@@ -1,0 +1,21 @@
+{
+	"color": "#ff15d4c2",
+	"description": "",
+	"display_name": "Mario",
+	"display_name_bool": true,
+	"id": "character-1670201569.json",
+	"mirror_portraits": false,
+	"name": "Algebra Student 7",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

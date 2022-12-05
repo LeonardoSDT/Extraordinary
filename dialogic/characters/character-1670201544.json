@@ -1,0 +1,21 @@
+{
+	"color": "#ff585050",
+	"description": "",
+	"display_name": "Liliana",
+	"display_name_bool": true,
+	"id": "character-1670201544.json",
+	"mirror_portraits": false,
+	"name": "Algebra Student 6",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

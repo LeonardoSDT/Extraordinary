@@ -1,10 +1,15 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Buildings/Classrooms/InsideClassroom.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://NPCs/NPC Teacher.tscn" type="PackedScene" id=3]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Buildings/Classrooms/ClassroomTileset.png" type="Texture" id=5]
 [ext_resource path="res://UI/Pause.tscn" type="PackedScene" id=6]
+[ext_resource path="res://NPCs/NPC Student.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Buildings/Classrooms/Chair.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Buildings/Classrooms/Table.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Music and Sounds/Soundtrack/InsideMusic.mp3" type="AudioStream" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "ClassroomTileset.png 0"
@@ -418,6 +423,96 @@ position = Vector2( 0, 176 )
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
 
+[node name="NPCs" type="YSort" parent="YSort"]
+
+[node name="NPC Teacher" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( 3, 32 )
+npc_name = "algebrateacher"
+npc_texture = "res://NPCs/Teacher.png"
+
+[node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 119, 24 )
+npc_name = "algebrastudent1"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 84, 24 )
+npc_name = "algebrastudent2"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student3" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 118, 87 )
+npc_name = "algebrastudent3"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student4" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 119, 54 )
+npc_name = "algebrastudent4"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student5" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 118, 120 )
+npc_name = "algebrastudent5"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student6" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 84, 120 )
+npc_name = "algebrastudent6"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student7" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 119, 150 )
+npc_name = "algebrastudent7"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="NPC Student8" parent="YSort/NPCs" instance=ExtResource( 7 )]
+position = Vector2( 85, 149 )
+npc_name = "algebrastudent8"
+npc_texture = "res://NPCs/Student.png"
+npc_frame = 12
+
+[node name="Objects" type="YSort" parent="YSort"]
+
+[node name="Table" parent="YSort/Objects" instance=ExtResource( 9 )]
+position = Vector2( 23, 21 )
+
+[node name="Chair" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 119, 12 )
+
+[node name="Chair2" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 84, 12 )
+
+[node name="Chair3" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 119, 42 )
+
+[node name="Chair4" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 84, 42 )
+
+[node name="Chair5" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 119, 75 )
+
+[node name="Chair6" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 84, 74 )
+
+[node name="Chair7" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 119, 108 )
+
+[node name="Chair8" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 84, 107 )
+
+[node name="Chair9" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 120, 138 )
+
+[node name="Chair10" parent="YSort/Objects" instance=ExtResource( 8 )]
+position = Vector2( 85, 137 )
+
 [node name="Exit" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
@@ -457,6 +552,10 @@ position = Vector2( 0, 202 )
 shape = SubResource( 9 )
 
 [node name="CanvasLayer2" parent="." instance=ExtResource( 6 )]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]
