@@ -1,13 +1,19 @@
 extends Area2D
 
 export var npc_name = "npc-name"
+export var npc_texture = "npc-name"
+export var npc_frame = 18
 var active = false
 
 var npc = null setget set_npc
 
+onready var sprite = $Sprite
+
 func _ready():
 	connect("body_entered", self, '_on_NPC_Student_body_entered')
 	connect("body_exited", self, '_on_NPC_Student_body_exited')
+	sprite.texture = load(npc_texture)
+	sprite.frame = npc_frame
 
 func _process(delta):
 	$KeySprite.visible = active

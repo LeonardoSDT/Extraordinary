@@ -1,6 +1,7 @@
 extends Node
 
 var player_pos : Vector2
+var player_pos2 : Vector2
 
 var music_enabled : bool
 var fx_enabled : bool

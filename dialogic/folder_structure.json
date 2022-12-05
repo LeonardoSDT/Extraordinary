@@ -12,16 +12,43 @@
 			"folders": {
 				"World": {
 					"files": [
-						"character-1669138637.json",
-						"character-1669408252.json",
-						"character-1669517083.json"
+
 					],
 					"folders": {
+						"Students": {
+							"files": [
+								"character-1669138637.json",
+								"character-1669517083.json",
+								"character-1670187511.json",
+								"character-1670187665.json",
+								"character-1670189500.json",
+								"character-1670189593.json"
+							],
+							"folders": {
 
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Teachers": {
+							"files": [
+								"character-1669408252.json",
+								"character-1670188589.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						}
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				}
 			},
@@ -183,11 +210,36 @@
 						},
 						"World": {
 							"files": [
-								"1669407611-648",
-								"1669408708-713"
+
 							],
 							"folders": {
+								"Students": {
+									"files": [
+										"1669407611-648",
+										"1670189645-763",
+										"1670189657-129"
+									],
+									"folders": {
 
+									},
+									"metadata": {
+										"color": null,
+										"folded": false
+									}
+								},
+								"Teachers": {
+									"files": [
+										"1669408708-713",
+										"1670188528-169"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								}
 							},
 							"metadata": {
 								"color": null,
@@ -197,7 +249,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},
@@ -320,16 +372,43 @@
 				},
 				"World": {
 					"files": [
-						"timeline-1669138708.json",
-						"timeline-1669408246.json",
-						"timeline-1669516921.json"
+
 					],
 					"folders": {
+						"Students": {
+							"files": [
+								"timeline-1669138708.json",
+								"timeline-1669516921.json",
+								"timeline-1670187494.json",
+								"timeline-1670187655.json",
+								"timeline-1670189478.json",
+								"timeline-1670189487.json"
+							],
+							"folders": {
 
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
+						"Teachers": {
+							"files": [
+								"timeline-1669408246.json",
+								"timeline-1670188489.json"
+							],
+							"folders": {
+
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						}
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				}
 			},

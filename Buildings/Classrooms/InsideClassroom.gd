@@ -4,7 +4,7 @@ export (PackedScene) var inside_scene
 
 var entered = false
 
-var outside = "res://World.tscn"
+var outside = "res://Buildings/Classrooms/InsideClassrooms.tscn"
 
 func _on_Exit_body_entered(body):
 	if entered:
@@ -12,15 +12,6 @@ func _on_Exit_body_entered(body):
 
 func _on_Exit_body_exited(body):
 	entered = true
-
-
-func _on_ClassroomDoorWay_body_entered(body):
-	body.building = self
-
-
-func _on_ClassroomDoorWay_body_exited(body):
-	if body.building == self:
-		body.building = null
 
 
 func enter():

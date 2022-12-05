@@ -147,18 +147,6 @@
 	],
 	"variables": [
 		{
-			"id": "1669407611-648",
-			"name": "student1-timeline-isheard",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1669408708-713",
-			"name": "teacher1-timeline-isheard",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1669565043-842",
 			"name": "algebrateacher-timeline-question1",
 			"type": 0,
@@ -311,6 +299,36 @@
 		{
 			"id": "1669865116-648",
 			"name": "boss_death",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669408708-713",
+			"name": "teacher1-timeline-isheard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1670188528-169",
+			"name": "teacher2-timeline-isheard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1669407611-648",
+			"name": "student1-timeline-isheard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1670189657-129",
+			"name": "student6-timeline-isheard",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1670189645-763",
+			"name": "student5-timeline-isheard",
 			"type": 0,
 			"value": "0"
 		}
