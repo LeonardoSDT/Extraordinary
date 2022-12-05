@@ -1,0 +1,30 @@
+{
+	"events": [
+		{
+			"character": "character-1670266020.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome to the library"
+		},
+		{
+			"condition": "<",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1670266020.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Doctor Fernando is waiting for you..."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670266011.json",
+		"name": "librarian-timeline"
+	}
+}

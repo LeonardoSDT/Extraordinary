@@ -6,7 +6,8 @@
 		"Characters": {
 			"files": [
 				"character-1669402094.json",
-				"character-1669773936.json"
+				"character-1669773936.json",
+				"character-1670266020.json"
 			],
 			"folders": {
 				"Algebra": {
@@ -322,7 +323,8 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1669773833.json"
+				"timeline-1669773833.json",
+				"timeline-1670266011.json"
 			],
 			"folders": {
 				"Algebra Timelines": {
@@ -478,7 +480,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},

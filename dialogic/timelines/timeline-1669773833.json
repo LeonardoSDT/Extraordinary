@@ -69,7 +69,7 @@
 
 			],
 			"portrait": "",
-			"question": "Are you ready for the extraordinary test?"
+			"question": "Are you ready for the Extraordinary test?"
 		},
 		{
 			"choice": "Yes!",
@@ -130,7 +130,7 @@
 			"character": "character-1669773936.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Congratulations, you have passed the extraordinary test!"
+			"text": "Congratulations, you have passed the Extraordinary test!"
 		},
 		{
 			"event_id": "dialogic_013"
