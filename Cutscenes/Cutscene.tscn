@@ -424,17 +424,20 @@ anims/RESET = SubResource( 8 )
 [node name="NPC Fernando" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, -128 )
 
+[node name="Sprite" parent="NPC Fernando" index="1"]
+texture = ExtResource( 10 )
+
 [node name="KeyPrompt" parent="NPC Fernando" index="4"]
 anims/KeyPrompt = SubResource( 6 )
 anims/RESET = SubResource( 7 )
 
 [node name="NPC Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 0, -70.5405 )
+position = Vector2( 0, -50 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -110 )
 current = true
-zoom = Vector2( 0.8, 0.8 )
+zoom = Vector2( 0.1, 0.1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -445,7 +448,7 @@ margin_bottom = 40.0
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
 margin_right = 320.0
 margin_bottom = 180.0
-color = Color( 0, 0, 0, 0 )
+color = Color( 0, 0, 0, 0.290909 )
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 visible = false
@@ -493,7 +496,6 @@ align = 1
 valign = 1
 
 [node name="Label4" type="Label" parent="CanvasLayer"]
-visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

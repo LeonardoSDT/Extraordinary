@@ -133,6 +133,42 @@
 			"text": "Congratulations, you have passed the Extraordinary test!"
 		},
 		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you want to watch the credits?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://Cutscenes/EndingCutscene.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Understandable"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"event_id": "dialogic_013"
 		}
 	],
