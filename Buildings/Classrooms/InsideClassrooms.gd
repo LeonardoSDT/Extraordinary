@@ -29,5 +29,5 @@ func _on_ClassroomDoorWay_body_exited(body):
 
 
 func enter():
-	Global.player_pos2 = Vector2(-640, -250)
+	Global.player_pos2 = Vector2(-510, -400)
 	get_tree().change_scene(inside_scene.resource_path)

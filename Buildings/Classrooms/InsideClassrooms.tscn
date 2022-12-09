@@ -567,7 +567,7 @@ extents = Vector2( 63.5, 7.5 )
 extents = Vector2( 64, 9 )
 
 [node name="Inside" type="Node2D"]
-position = Vector2( -640, -400 )
+position = Vector2( -525, -600 )
 script = ExtResource( 3 )
 inside_scene = ExtResource( 15 )
 
