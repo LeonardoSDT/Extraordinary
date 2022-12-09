@@ -1,0 +1,21 @@
+{
+	"color": "#ff5a5555",
+	"description": "",
+	"display_name": "Carlos",
+	"display_name_bool": true,
+	"id": "character-1670552382.json",
+	"mirror_portraits": false,
+	"name": "Tutorial NPC Student 1",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

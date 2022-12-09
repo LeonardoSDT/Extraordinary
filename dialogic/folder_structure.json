@@ -30,6 +30,19 @@
 						"folded": true
 					}
 				},
+				"Tutorial": {
+					"files": [
+						"character-1670552382.json",
+						"character-1670552444.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": true
+					}
+				},
 				"World": {
 					"files": [
 
@@ -50,7 +63,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"Teachers": {
@@ -69,7 +82,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},
@@ -439,6 +452,19 @@
 					"metadata": {
 						"color": null,
 						"folded": true
+					}
+				},
+				"Tutorial": {
+					"files": [
+						"timeline-1670552487.json",
+						"timeline-1670552574.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
 					}
 				},
 				"World": {

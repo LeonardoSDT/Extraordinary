@@ -7,7 +7,7 @@ func _ready():
 	animationPlayer.play("Cutscene")
 
 func _on_ContinueButton_pressed():
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://Buildings/Laboratories/InsideLaboratories.tscn")
 
 func animation_finished():
 	buttonBlinking.play("ButtonBlinking")

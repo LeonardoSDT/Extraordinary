@@ -276,10 +276,9 @@ align = 1
 valign = 1
 
 [node name="ContinueButton" type="Button" parent="CanvasLayer/VBoxContainer"]
-margin_left = 123.0
-margin_top = 137.0
-margin_right = 206.0
-margin_bottom = 159.0
+margin_top = 91.0
+margin_right = 269.0
+margin_bottom = 113.0
 focus_neighbour_top = NodePath("../TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs")
 focus_neighbour_bottom = NodePath("../TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full")
 custom_colors/font_color = Color( 0.235294, 0.345098, 0.0745098, 1 )

@@ -778,11 +778,6 @@ npc_texture = "res://NPCs/Student.png"
 position = Vector2( -424, -112 )
 npc_texture = "res://NPCs/Student.png"
 
-[node name="NPC Student" parent="YSort/NPCs" instance=ExtResource( 13 )]
-position = Vector2( -200, 96 )
-npc_name = "student"
-npc_texture = "res://NPCs/Student.png"
-
 [node name="NPC Student2" parent="YSort/NPCs" instance=ExtResource( 13 )]
 position = Vector2( -424, -32 )
 npc_name = "student5"

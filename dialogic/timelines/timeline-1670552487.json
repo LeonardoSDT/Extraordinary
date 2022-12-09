@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1670552382.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Click or press Space to move to the next dialogue"
+		},
+		{
+			"character": "character-1670552382.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press E to interact with the enviroment when available"
+		},
+		{
+			"character": "character-1670552382.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press W, A, S, D to move in each direction"
+		},
+		{
+			"character": "character-1670552382.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press P to pause the game"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670552487.json",
+		"name": "tutorial-student1-timeline"
+	}
+}
