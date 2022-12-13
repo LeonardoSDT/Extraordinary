@@ -133,6 +133,7 @@ autoplay = true
 position = Vector2( 160, 115 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 11 )
+frame = 4
 playing = true
 
 [connection signal="focus_entered" from="StartButton" to="." method="_on_StartButton_focus_entered"]
