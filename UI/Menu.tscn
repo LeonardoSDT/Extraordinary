@@ -1,10 +1,15 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://UI/Menu.gd" type="Script" id=1]
 [ext_resource path="res://UI/menu-font.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Music and Sounds/Soundtrack/Intro.mp3" type="AudioStream" id=3]
 [ext_resource path="res://Player/Player.png" type="Texture" id=4]
 [ext_resource path="res://UI/Background.png" type="Texture" id=5]
+[ext_resource path="res://UI/game-font.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=15]
+size = 8
+font_data = ExtResource( 6 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 24
@@ -70,9 +75,19 @@ script = ExtResource( 1 )
 position = Vector2( 160, 90 )
 texture = ExtResource( 5 )
 
+[node name="Label" type="Label" parent="."]
+margin_left = 113.0
+margin_top = 168.0
+margin_right = 314.0
+margin_bottom = 179.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 15 )
+text = "Made by: Leonardo Sánchez Del Toro"
+
 [node name="RichTextLabel" type="Label" parent="."]
 margin_right = 320.0
 margin_bottom = 65.0
+rect_pivot_offset = Vector2( 195, 33 )
 custom_colors/font_color = Color( 0.588235, 0.0117647, 0.0117647, 1 )
 custom_fonts/font = SubResource( 4 )
 text = "EXTRAORDINARY"
@@ -109,6 +124,7 @@ text = "OPTIONS"
 flat = true
 
 [node name="QuitButton" type="Button" parent="."]
+visible = false
 margin_left = 28.0
 margin_top = 149.0
 margin_right = 110.0

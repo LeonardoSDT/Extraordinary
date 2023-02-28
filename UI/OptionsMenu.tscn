@@ -1,14 +1,9 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://UI/menu-font.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/OptionsMenu.gd" type="Script" id=2]
 [ext_resource path="res://UI/Background2.png" type="Texture" id=3]
 [ext_resource path="res://UI/Menu.tres" type="Theme" id=4]
-[ext_resource path="res://UI/grabber_highlight.png" type="Texture" id=5]
-[ext_resource path="res://UI/grabber.png" type="Texture" id=6]
-[ext_resource path="res://UI/bg.png" type="Texture" id=7]
-[ext_resource path="res://UI/bg2.png" type="Texture" id=8]
-[ext_resource path="res://UI/bg3.png" type="Texture" id=9]
 
 [sub_resource type="StyleBoxFlat" id=29]
 bg_color = Color( 0.882353, 0.882353, 0.882353, 1 )
@@ -62,49 +57,11 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxEmpty" id=26]
 
-[sub_resource type="DynamicFont" id=13]
-size = 8
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxEmpty" id=27]
-
 [sub_resource type="DynamicFont" id=14]
 size = 8
 font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxEmpty" id=28]
-
-[sub_resource type="DynamicFont" id=4]
-size = 8
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=5]
-size = 8
-font_data = ExtResource( 1 )
-
-[sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 7 )
-region_rect = Rect2( 0, 0, 256, 16 )
-
-[sub_resource type="StyleBoxTexture" id=21]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 256, 16 )
-
-[sub_resource type="StyleBoxTexture" id=22]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 256, 16 )
-
-[sub_resource type="StyleBoxTexture" id=23]
-texture = ExtResource( 7 )
-region_rect = Rect2( 0, 0, 256, 16 )
-
-[sub_resource type="StyleBoxTexture" id=24]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 256, 16 )
-
-[sub_resource type="StyleBoxTexture" id=25]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 256, 16 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 12
@@ -135,8 +92,6 @@ custom_fonts/font = SubResource( 9 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 22.0
-focus_neighbour_left = NodePath("../AUDIO")
-focus_neighbour_right = NodePath("../AUDIO")
 custom_colors/font_color_bg = Color( 0, 0, 0, 1 )
 custom_colors/font_color_fg = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 10 )
@@ -150,22 +105,20 @@ __meta__ = {
 }
 
 [node name="GridContainer" type="GridContainer" parent="TabContainer/VIDEO/CenterContainer"]
-margin_left = 70.0
-margin_top = 23.0
-margin_right = 234.0
-margin_bottom = 103.0
+margin_left = 89.0
+margin_top = 37.0
+margin_right = 215.0
+margin_bottom = 89.0
 
 [node name="fullscreen" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
-margin_right = 164.0
+margin_right = 126.0
 margin_bottom = 24.0
 alignment = 1
 
 [node name="full" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen"]
-margin_left = 19.0
-margin_right = 145.0
+margin_right = 126.0
 margin_bottom = 24.0
 focus_neighbour_top = NodePath("../../../../../../BackButton")
-focus_neighbour_bottom = NodePath("../../borderless/border")
 theme = ExtResource( 4 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.533333, 0.176471, 1 )
 custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
@@ -176,38 +129,16 @@ custom_fonts/font = SubResource( 12 )
 custom_styles/focus = SubResource( 26 )
 text = "TOGGLE FULLSCREEN"
 
-[node name="borderless" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
+[node name="vsync" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
 margin_top = 28.0
-margin_right = 164.0
+margin_right = 126.0
 margin_bottom = 52.0
 alignment = 1
 
-[node name="border" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/borderless"]
-margin_right = 164.0
-margin_bottom = 24.0
-focus_neighbour_top = NodePath("../../fullscreen/full")
-focus_neighbour_bottom = NodePath("../../vsync/vs")
-theme = ExtResource( 4 )
-custom_colors/font_color_focus = Color( 0.0588235, 0.533333, 0.176471, 1 )
-custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0.560784, 0.0235294, 0.0862745, 1 )
-custom_colors/font_color_pressed = Color( 0.0196078, 0.156863, 0.52549, 1 )
-custom_fonts/font = SubResource( 13 )
-custom_styles/focus = SubResource( 27 )
-text = "TOGGLE BORDERLESS SCREEN"
-
-[node name="vsync" type="HBoxContainer" parent="TabContainer/VIDEO/CenterContainer/GridContainer"]
-margin_top = 56.0
-margin_right = 164.0
-margin_bottom = 80.0
-alignment = 1
-
 [node name="vs" type="CheckBox" parent="TabContainer/VIDEO/CenterContainer/GridContainer/vsync"]
-margin_left = 34.0
-margin_right = 130.0
+margin_left = 15.0
+margin_right = 111.0
 margin_bottom = 24.0
-focus_neighbour_top = NodePath("../../borderless/border")
 focus_neighbour_bottom = NodePath("../../../../../../BackButton")
 theme = ExtResource( 4 )
 custom_colors/font_color_focus = Color( 0.0588235, 0.533333, 0.176471, 1 )
@@ -218,101 +149,6 @@ custom_colors/font_color_pressed = Color( 0.0196078, 0.156863, 0.52549, 1 )
 custom_fonts/font = SubResource( 14 )
 custom_styles/focus = SubResource( 28 )
 text = "TOGGLE VSYNC"
-
-[node name="AUDIO" type="Tabs" parent="TabContainer"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 22.0
-focus_neighbour_left = NodePath("../VIDEO")
-focus_neighbour_right = NodePath("../VIDEO")
-
-[node name="CenterContainer" type="CenterContainer" parent="TabContainer/AUDIO"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -150.0
-margin_top = -60.0
-margin_right = 150.0
-margin_bottom = 60.0
-
-[node name="GridContainer" type="GridContainer" parent="TabContainer/AUDIO/CenterContainer"]
-margin_left = 22.0
-margin_top = 28.0
-margin_right = 278.0
-margin_bottom = 92.0
-
-[node name="music_level" type="VBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer"]
-margin_right = 256.0
-margin_bottom = 30.0
-alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level"]
-margin_right = 256.0
-margin_bottom = 10.0
-
-[node name="music" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level/HBoxContainer"]
-margin_right = 74.0
-margin_bottom = 10.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 4 )
-text = "MUSIC VOLUME:"
-
-[node name="music2" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level/HBoxContainer"]
-margin_left = 78.0
-margin_right = 95.0
-margin_bottom = 10.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 5 )
-text = "100"
-
-[node name="music_db" type="HSlider" parent="TabContainer/AUDIO/CenterContainer/GridContainer/music_level"]
-margin_top = 14.0
-margin_right = 256.0
-margin_bottom = 30.0
-custom_icons/grabber_highlight = ExtResource( 5 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 20 )
-custom_styles/grabber_area_highlight = SubResource( 21 )
-custom_styles/grabber_area = SubResource( 22 )
-value = 100.0
-
-[node name="fx_volume" type="VBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer"]
-margin_top = 34.0
-margin_right = 256.0
-margin_bottom = 64.0
-alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume"]
-margin_right = 256.0
-margin_bottom = 10.0
-
-[node name="fx" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume/HBoxContainer"]
-margin_right = 76.0
-margin_bottom = 10.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 4 )
-text = "SOUND EFFECTS:"
-
-[node name="fx2" type="Label" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume/HBoxContainer"]
-margin_left = 80.0
-margin_right = 97.0
-margin_bottom = 10.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 5 )
-text = "100"
-
-[node name="fx_db" type="HSlider" parent="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume"]
-margin_top = 14.0
-margin_right = 256.0
-margin_bottom = 30.0
-custom_icons/grabber_highlight = ExtResource( 5 )
-custom_icons/grabber = ExtResource( 6 )
-custom_styles/slider = SubResource( 23 )
-custom_styles/grabber_area_highlight = SubResource( 24 )
-custom_styles/grabber_area = SubResource( 25 )
-value = 100.0
 
 [node name="BackButton" type="Button" parent="."]
 margin_left = 3.0
@@ -334,11 +170,7 @@ flat = true
 
 [connection signal="focus_entered" from="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full" to="." method="_on_full_focus_entered"]
 [connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full" to="." method="_on_full_toggled"]
-[connection signal="focus_entered" from="TabContainer/VIDEO/CenterContainer/GridContainer/borderless/border" to="." method="_on_border_focus_entered"]
-[connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/borderless/border" to="." method="_on_border_toggled"]
 [connection signal="focus_entered" from="TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs" to="." method="_on_vs_focus_entered"]
 [connection signal="toggled" from="TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs" to="." method="_on_vs_toggled"]
-[connection signal="value_changed" from="TabContainer/AUDIO/CenterContainer/GridContainer/music_level/music_db" to="." method="_on_music_db_value_changed"]
-[connection signal="value_changed" from="TabContainer/AUDIO/CenterContainer/GridContainer/fx_volume/fx_db" to="." method="_on_fx_db_value_changed"]
 [connection signal="focus_entered" from="BackButton" to="." method="_on_BackButton_focus_entered"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

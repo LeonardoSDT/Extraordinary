@@ -5,7 +5,6 @@ export var npc_texture = "npc-name"
 export var npc_frame = 18
 var active = false
 
-onready var node = preload("res://World/SubjectMedal.tscn")
 
 var npc = null setget set_npc
 
@@ -42,22 +41,6 @@ func set_npc(new_npc):
 		$Key.hide()
 		$KeyPrompt.stop()
 	npc = new_npc
-
-
-func dialogic_signal(argument):
-	var nodeInstance = node.instance()
-	if argument == '_passsubject1':
-		nodeInstance.position = Vector2(80, -100)
-		get_tree().get_root().add_child(nodeInstance)
-	if argument == '_passsubject2':
-		pass
-	if argument == '_passsubject3':
-		pass
-	if argument == '_passsubject4':
-		pass
-	if argument == '_passsubject5':
-		pass
-
 
 func _on_NPC_Student_body_entered(body):
 	if body.name == 'Player':
