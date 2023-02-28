@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BossMusicSecondPhase.mp3-38c54e8aa6fa2fedf6c0c63c7c71d106.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/BossMusicSecondPhase.mp3"
+dest_files=[ "res://.import/BossMusicSecondPhase.mp3-38c54e8aa6fa2fedf6c0c63c7c71d106.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

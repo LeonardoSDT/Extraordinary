@@ -1,0 +1,68 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1670189657-129",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1670189593.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm going to declare my love to Anna!"
+		},
+		{
+			"character": "character-1670189500.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hahahaha"
+		},
+		{
+			"character": "character-1670189593.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why are you laughing?"
+		},
+		{
+			"character": "character-1670189500.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Everyone knows that already"
+		},
+		{
+			"character": "character-1670189593.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What?!"
+		},
+		{
+			"character": "character-1670189500.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You cannot hide your feelings, it's too obvious"
+		},
+		{
+			"definition": "1670189657-129",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1670189593.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670189487.json",
+		"name": "student6-timeline"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1670187665.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "These are the classrooms, you'll have the find out which is yours"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670187655.json",
+		"name": "student4-timeline"
+	}
+}

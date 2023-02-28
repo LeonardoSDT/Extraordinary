@@ -1,0 +1,44 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1670201749-754",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1670201569.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good morning, I'm Mario, a pleasure to meet you"
+		},
+		{
+			"character": "character-1670201569.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This seat is not taken, you can take it if you want"
+		},
+		{
+			"definition": "1670201749-754",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1670201569.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come on, here"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670202774.json",
+		"name": "algebrastudent7-timeline"
+	}
+}

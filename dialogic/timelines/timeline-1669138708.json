@@ -1,0 +1,75 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669407611-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669138637.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi, you must be the new student"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes"
+		},
+		{
+			"character": "character-1669138637.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let me give you an advice, be aware of the giant scorpions"
+		},
+		{
+			"character": "character-1669138637.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The students of Agrotechnology were doing some practices and they threw accidentally some chemicals in a scorpion nest, that's why they are huge"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, okay"
+		},
+		{
+			"definition": "1669407611-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1669407611-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1669138637.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cheers!"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669138708.json",
+		"name": "student1-timeline"
+	}
+}

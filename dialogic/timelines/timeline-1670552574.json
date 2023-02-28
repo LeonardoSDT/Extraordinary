@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"character": "character-1670552444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press Q to attack in the direction you are facing"
+		},
+		{
+			"character": "character-1670552444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press Space to roll in the direction you are facing"
+		},
+		{
+			"character": "character-1670552444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "When rolling you are immune to damage during a fraction of a second"
+		},
+		{
+			"character": "character-1670552444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "When you or the enemies receive damage, you are immune to more damage during a fraction of a second"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670552574.json",
+		"name": "tutorial-student2-timeline"
+	}
+}

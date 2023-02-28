@@ -1,0 +1,60 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669564537-970",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welcome to your first Algebra class, you must be the new student"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm teacher Santiago, nice to meet you"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nice to meet you too"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So, the first thing we are going to learn is about what is algebra"
+		},
+		{
+			"definition": "1669564537-970",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_timeline": "timeline-1669527635.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669521308.json",
+		"name": "algebrateacher-timeline"
+	}
+}

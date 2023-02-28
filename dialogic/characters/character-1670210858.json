@@ -1,0 +1,21 @@
+{
+	"color": "#ff9e09f2",
+	"description": "",
+	"display_name": "Amelia",
+	"display_name_bool": true,
+	"id": "character-1670210858.json",
+	"mirror_portraits": false,
+	"name": "NPC Student 7",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

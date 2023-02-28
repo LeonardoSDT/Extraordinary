@@ -1,0 +1,21 @@
+{
+	"color": "#ffe5e64a",
+	"description": "",
+	"display_name": "César",
+	"display_name_bool": true,
+	"id": "character-1670189593.json",
+	"mirror_portraits": false,
+	"name": "NPC Student 6",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

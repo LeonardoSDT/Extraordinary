@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WorldMusic.mp3-720ce7df73760c7bf0af84e34edcc6bb.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Soundtrack/WorldMusic.mp3"
+dest_files=[ "res://.import/WorldMusic.mp3-720ce7df73760c7bf0af84e34edcc6bb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

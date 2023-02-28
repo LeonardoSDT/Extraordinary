@@ -1,0 +1,21 @@
+{
+	"color": "#ff8d0404",
+	"description": "",
+	"display_name": "Rodrigo",
+	"display_name_bool": true,
+	"id": "character-1670201301.json",
+	"mirror_portraits": false,
+	"name": "Algebra Student 1",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1669232650.cfg"
+}

@@ -1,0 +1,342 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Enemies/Boss/FernandoBossMage.png" type="Texture" id=1]
+[ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/Boss/FernandoBossMage.gd" type="Script" id=3]
+[ext_resource path="res://Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Overlap/SoftColliision.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Overlap/Hitbox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Music and Sounds/Hit.wav" type="AudioStream" id=8]
+[ext_resource path="res://Enemies/AttackPlayerDetectionZone.tscn" type="PackedScene" id=10]
+[ext_resource path="res://WhiteColor.gdshader" type="Shader" id=11]
+[ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=12]
+[ext_resource path="res://UI/game-font.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://UI/HealthUIBoss.tscn" type="PackedScene" id=14]
+
+[sub_resource type="DynamicFont" id=16]
+size = 6
+font_data = ExtResource( 13 )
+
+[sub_resource type="ShaderMaterial" id=11]
+shader = ExtResource( 11 )
+shader_param/active = false
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.0
+height = 4.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "Attacking"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 9 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Hitbox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "audio"
+tracks/3/path = NodePath("../AudioStreamPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0.3 )
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Idle"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Hitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Hitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Running"
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../Hitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 141.032
+
+[sub_resource type="CapsuleShape2D" id=15]
+radius = 13.0
+height = 38.0
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 23.0
+height = 34.0
+
+[sub_resource type="CapsuleShape2D" id=9]
+radius = 4.0
+height = 2.0
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:material:shader_param/active")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Start"
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:material:shader_param/active")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Stop"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:material:shader_param/active")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="FernandoBossMage" type="KinematicBody2D"]
+script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = -40.0
+margin_right = 152.0
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_right = 142.0
+margin_bottom = 8.0
+custom_fonts/font = SubResource( 16 )
+text = "Doctor Fernando, Crystal Mage"
+
+[node name="HealthUIBoss" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 14 )]
+margin_top = 12.0
+margin_right = 142.0
+margin_bottom = 12.0
+
+[node name="BossStats" parent="CanvasLayer/VBoxContainer/HealthUIBoss" index="0"]
+max_health = 18
+
+[node name="ShadowSprite" type="Sprite" parent="."]
+texture = ExtResource( 12 )
+offset = Vector2( 0, 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 11 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -9 )
+hframes = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CollisionShape2D")
+anims/Attacking = SubResource( 2 )
+anims/Idle = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+anims/Running = SubResource( 5 )
+
+[node name="Hurtbox" parent="." instance=ExtResource( 2 )]
+visible = false
+collision_layer = 8
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 0, -10 )
+shape = SubResource( 6 )
+
+[node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+shape = SubResource( 7 )
+
+[node name="AttackPlayerDetectionZone" parent="." instance=ExtResource( 10 )]
+visible = false
+
+[node name="CollisionShape2D" parent="AttackPlayerDetectionZone" index="0"]
+position = Vector2( 0, 6 )
+rotation = 1.5708
+shape = SubResource( 15 )
+
+[node name="Hitbox" parent="." instance=ExtResource( 6 )]
+visible = false
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( 0, 16 )
+rotation = 1.5708
+shape = SubResource( 8 )
+
+[node name="SoftColliision" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="CollisionShape2D" parent="SoftColliision" index="0"]
+rotation = 1.5708
+shape = SubResource( 9 )
+
+[node name="WanderController" parent="." instance=ExtResource( 7 )]
+
+[node name="BlinkAnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 12 )
+anims/Start = SubResource( 13 )
+anims/Stop = SubResource( 14 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[connection signal="no_health" from="CanvasLayer/VBoxContainer/HealthUIBoss/BossStats" to="." method="_on_BossStats_no_health"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
+[connection signal="invincibility_started" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_started"]
+
+[editable path="CanvasLayer/VBoxContainer/HealthUIBoss"]
+[editable path="Hurtbox"]
+[editable path="PlayerDetectionZone"]
+[editable path="AttackPlayerDetectionZone"]
+[editable path="Hitbox"]
+[editable path="SoftColliision"]

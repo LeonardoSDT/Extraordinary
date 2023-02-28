@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1670210858.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you want to enter the building you have to go this way, the other door is closed"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670210840.json",
+		"name": "student7-timeline"
+	}
+}

@@ -1,0 +1,292 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://UI/game-font.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Cutscenes/IntroCutscene.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=4]
+resource_name = "Cutscene"
+length = 21.0
+tracks/0/type = "method"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 21 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "animation_finished"
+} ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/VBoxContainer/Label:custom_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/VBoxContainer/Label2:custom_colors/font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 3, 5.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/VBoxContainer/Label3:custom_colors/font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 5.7, 8.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CanvasLayer/VBoxContainer/Label4:custom_colors/font_color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 8.6, 11.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CanvasLayer/VBoxContainer/Label5:custom_colors/font_color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 11.5, 14.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CanvasLayer/VBoxContainer/Label6:custom_colors/font_color")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 14.5, 17.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CanvasLayer/VBoxContainer/Label7:custom_colors/font_color")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 17.4, 20 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CanvasLayer/VBoxContainer/ContinueButton:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 21 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+
+[sub_resource type="Animation" id=6]
+resource_name = "ButtonBlinking"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/VBoxContainer/ContinueButton:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0.235294, 0.345098, 0.0745098, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/VBoxContainer/ContinueButton:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/VBoxContainer/ContinueButton:custom_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.235294, 0.345098, 0.0745098, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 7
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="IntroCutscene" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Cutscene = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[node name="ButtonBlinking" type="AnimationPlayer" parent="."]
+anims/ButtonBlinking = SubResource( 6 )
+anims/RESET = SubResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -134.5
+margin_top = -43.5
+margin_right = 134.5
+margin_bottom = 43.5
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_right = 269.0
+margin_bottom = 9.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Yes, indeed."
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 13.0
+margin_right = 269.0
+margin_bottom = 22.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "His name is Sebastián,"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 26.0
+margin_right = 269.0
+margin_bottom = 35.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "he's an average student"
+align = 1
+valign = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 39.0
+margin_right = 269.0
+margin_bottom = 48.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "who just graduated from high school."
+align = 1
+valign = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 269.0
+margin_bottom = 61.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "He wanted to follow his dreams,"
+align = 1
+valign = 1
+
+[node name="Label6" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 65.0
+margin_right = 269.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "that's why he got into the university he always wanted..."
+align = 1
+valign = 1
+
+[node name="Label7" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_top = 78.0
+margin_right = 269.0
+margin_bottom = 87.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "But he never imagined what he would face there..."
+align = 1
+valign = 1
+
+[node name="ContinueButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 91.0
+margin_right = 269.0
+margin_bottom = 113.0
+focus_neighbour_top = NodePath("../TabContainer/VIDEO/CenterContainer/GridContainer/vsync/vs")
+focus_neighbour_bottom = NodePath("../TabContainer/VIDEO/CenterContainer/GridContainer/fullscreen/full")
+custom_colors/font_color = Color( 0.235294, 0.345098, 0.0745098, 1 )
+custom_colors/font_color_hover = Color( 0.611765, 0.0745098, 0.0745098, 1 )
+custom_colors/font_color_pressed = Color( 0.0823529, 0.0156863, 0.403922, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+text = "Continue"
+flat = true
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]

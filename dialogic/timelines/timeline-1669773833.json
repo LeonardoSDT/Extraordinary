@@ -1,0 +1,180 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669774035-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi, I'm doctor Fernando"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can I help you with something?"
+		},
+		{
+			"definition": "1669774035-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"condition": "",
+			"definition": "1669774260-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": ">=",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Congratulations, you're good at math!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1669526452-146",
+			"event_id": "dialogic_012",
+			"value": "80"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you ready for the Extraordinary test?"
+		},
+		{
+			"choice": "Yes!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Be ready..."
+		},
+		{
+			"character": "character-1669402094.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wait, why do I hear boss music?"
+		},
+		{
+			"change_scene": "res://Cutscenes/Cutscene.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come back when you're ready"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1669865116-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Congratulations, you have passed the Extraordinary test!"
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you want to watch the credits?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://Cutscenes/EndingCutscene.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669773936.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Understandable"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669773833.json",
+		"name": "Fernando-timeline"
+	}
+}

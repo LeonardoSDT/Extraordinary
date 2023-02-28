@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BossMusicCutsceneSecondPhase.mp3-37f244c42cc943af42629df7b76a0ae7.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Enemies/Boss Music/BossMusicCutsceneSecondPhase.mp3"
+dest_files=[ "res://.import/BossMusicCutsceneSecondPhase.mp3-37f244c42cc943af42629df7b76a0ae7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

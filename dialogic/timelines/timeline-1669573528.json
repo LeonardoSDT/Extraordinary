@@ -1,0 +1,94 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1669573461-298",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So, if we convert the exponential form \"x = a^n\" into logarithmic form we would get..."
+		},
+		{
+			"choice": "log_x(a) = n",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's not the right answer"
+		},
+		{
+			"choice": "log_a(n) = x",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's not the right answer"
+		},
+		{
+			"choice": "log_a(x) = n",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Correct!"
+		},
+		{
+			"choice": "I don't know",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1669521267.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmmm..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1669573461-298",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"change_timeline": "timeline-1669573545.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669573528.json",
+		"name": "algebrateacher-timeline-question3"
+	}
+}

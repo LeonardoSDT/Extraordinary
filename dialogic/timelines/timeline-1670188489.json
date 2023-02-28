@@ -1,0 +1,65 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1670188528-169",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1670188589.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hi, what career are you in?"
+		},
+		{
+			"choice": "Software",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Businesses and Administration",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Agrotechnology",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1670188528-169",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1670188589.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, then look for the classroom with the number 4"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1670188489.json",
+		"name": "teacher2-timeline"
+	}
+}
