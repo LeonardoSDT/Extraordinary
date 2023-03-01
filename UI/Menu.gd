@@ -8,7 +8,7 @@ func _ready():
 
 func _on_StartButton_pressed():
 	audio_select()
-	get_tree().change_scene("res://Cutscenes/IntroCutscene.tscn")
+	get_tree().change_scene("res://Cutscenes/MobileControlsCutscene.tscn")
 
 func _on_QuitButton_pressed():
 	get_tree().quit()

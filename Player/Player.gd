@@ -36,9 +36,14 @@ func _ready():
 	set_building(null)
 
 func _unhandled_input(event):
-	if event is InputEventKey and event.is_action_pressed("interact") and building != null:
-		Global.player_pos = global_position
-		building.enter()
+	if Global.mobile_controls == true:
+		if Input.is_action_just_pressed("interact") and building != null:
+			Global.player_pos = global_position
+			building.enter()
+	elif Global.mobile_controls == false:
+		if event is InputEventKey and event.is_action_pressed("interact") and building != null:
+			Global.player_pos = global_position
+			building.enter()
 
 
 func _physics_process(delta):

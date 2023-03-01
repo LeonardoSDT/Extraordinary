@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Enemies/Scorpion.tscn" type="PackedScene" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://World/Objects/Plants/Bush3.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/Objects/Plants/Bush2.tscn" type="PackedScene" id=31]
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=32]
+[ext_resource path="res://UI/MobileControls.tscn" type="PackedScene" id=33]
 
 [sub_resource type="TileSet" id=1]
 0/name = "ConcreteTileset.png"
@@ -1531,6 +1532,8 @@ shape = SubResource( 57 )
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Limits"]
 position = Vector2( -1816.75, -814.5 )
 shape = SubResource( 58 )
+
+[node name="CanvasLayer4" parent="." instance=ExtResource( 33 )]
 
 [editable path="CanvasLayer2"]
 [editable path="CanvasLayer3"]

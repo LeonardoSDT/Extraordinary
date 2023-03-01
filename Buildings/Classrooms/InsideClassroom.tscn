@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Buildings/Classrooms/InsideClassroom.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Buildings/Classrooms/Chair.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Buildings/Classrooms/Table.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Music and Sounds/Soundtrack/InsideMusic.mp3" type="AudioStream" id=10]
+[ext_resource path="res://UI/MobileControls.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "ClassroomTileset.png 0"
@@ -556,6 +557,8 @@ shape = SubResource( 9 )
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 autoplay = true
+
+[node name="CanvasLayer3" parent="." instance=ExtResource( 11 )]
 
 [connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_exited" from="Exit" to="." method="_on_Exit_body_exited"]
